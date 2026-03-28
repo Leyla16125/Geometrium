@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@keyframes yellowFill {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes grayRise {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes grayY {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes grayLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@layer utilities {
+  .animate-yellow-fill {
+    transform: translateY(100%);
+    animation: yellowFill 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+
+  .animate-gray-rise {
+    transform: translateY(100%);
+    animation: grayRise 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation-delay: 0.75s;
+  }
+  .animate-gray-y{
+    transform: translateX(100%);
+    animation: grayY 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation-delay: 0.75s;
+  }
+  .animate-gray-left {
+  transform: translateX(-100%);
+  animation: grayLeft 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: 0.75s;
+}
+}

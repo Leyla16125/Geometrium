@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometrium</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class= "bg-[#ddd]">
+  <section class="relative mx-20 h-136 bg-[#ddd]">
+    <div class="flex">
+      <div class="relative w-80 h-80 overflow-hidden bg-[#ddd]">
+        <div class="absolute inset-0 bg-[#ccfe0f] animate-yellow-fill z-1"></div>
+        <div class="absolute inset-x-0 bottom-0 h-50 bg-[#ddd] animate-gray-rise z-2"></div>
+
+        <h3 class="relative z-3 ml-4 mt-4 text-[40px] font-black">geometrium</h3>
+
+        <p class="absolute left-4 bottom-4 z-3 text-[14px] uppercase leading-[1.8rem]">
+          design &<br>architecture
+        </p>
+
+        <p class="absolute right-4 bottom-1 z-3 font-black tracking-[-0.04em] text-[40px]">
+          studio
+        </p>
+      </div>
+
+      <div class="relative flex-1 h-80 overflow-hidden bg-[#ddd]">
+        <div class="absolute inset-0 bg-[#d7d7d7] animate-gray-y z-1"></div>
+
+        <span class="absolute top-28 left-90 z-3 text-[38px] text-gray-500 font-light">+</span>
+        <span class="absolute top-28 right-10 z-3 text-[38px] text-gray-500 font-light">+</span>
+        <span class="absolute bottom-1 left-90 z-3 text-[38px] text-gray-500 font-light">+</span>
+        <span class="absolute bottom-1 right-10 z-3 text-[38px] text-gray-500 font-light">+</span>
+
+        <div class="relative z-3 h-full px-16 pt-9">
+          <nav class="flex justify-center">
+            <ul class="flex items-center gap-8 text-[18px] font-medium text-black">
+              <li>услуги</li>
+              <li>портфолио</li>
+              <li>о компании</li>
+              <li>school</li>
+              <li>контакты</li>
+              <li class="ml-16 text-[14px] font-normal">ru</li>
+            </ul>
+          </nav>
+
+          <div class="mt-4 flex items-center justify-center gap-5">
+            <img src="img/messenger.png" class="w-6 h-6 object-contain" alt="messenger">
+            <img src="img/telegram.png" class="w-6 h-6 object-contain" alt="telegram">
+
+            <a href="tel:+74994446816" class="ml-2 text-[18px] font-medium underline">
+              +7 (499) 444-68-16
+            </a>
+
+            <p class="text-[18px] font-semibold">заказать звонок</p>
+          </div>
+
+          <div class="mt-10 ml-88 max-w-195">
+            <p class="text-[40px] leading-[0.98] tracking-[-0.04em] font-medium text-black">
+              Более 12 лет создаем пространства для жизни и бизнеса по всему миру
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="absolute left-0 bottom-0 w-[63%] h-92 bg-[#d7d7d7] animate-gray-left z-2"></div>
+  </section>
+
+
+  <section class="bg-[#ddd] px-5 md:px-10 lg:px-20 py-10 md:py-16">
+      <p class="text-white uppercase tracking-[0.08em] text-[40px] md:text-[60px] lg:text-[80px] font-light leading-none">
+        ПОРТФОЛИО
+      </p>
+
+      <div class="mt-6 max-w-432 text-[24px] md:text-[38px] lg:text-[50px] leading-none tracking-[-0.04em] font-medium text-black">
+        Каждый проект уникален, как и каждый
+        <br class="hidden md:block">
+        клиент, который к нам обращается
+      </div>
+
+      <div id="portfolio" class="grid grid-cols-1 sm:grid-cols-2 gap-10 my-20"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
