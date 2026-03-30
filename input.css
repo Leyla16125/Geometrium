@@ -41,6 +41,21 @@
   }
 }
 
+
+
+@keyframes panX {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-20%);
+  }
+}
+
+.animate-pan-x {
+  animation: panX 12s linear infinite ;
+}
+
 .btn-shine {
   position: relative;
   overflow: hidden;
