@@ -443,12 +443,15 @@
     <div>
       <div class="relative w-full cursor-pointer" onclick="toggleVideo()">
 
-        <video id="video" class="max-w-240 h-auto object-cover lg:ml-50"
-          poster="https://geometrium.com/wp-content/themes/Geometrium-template/img/video-2.jpg">
-          <source src="https://geometrium.com/wp-content/themes/Geometrium-template/img/main_video.webm"
-            type="video/webm">
-          <source src="https://geometrium.com/wp-content/themes/Geometrium-template/img/main_video.mp4"
-            type="video/mp4">
+        <video 
+          id="video"
+          class="max-w-240 h-auto object-cover lg:ml-50"
+          controls
+          preload="metadata"
+          playsinline
+        >
+          <source src="https://geometrium.com/wp-content/themes/Geometrium-template/img/main_video.webm" type="video/webm">
+          <source src="https://geometrium.com/wp-content/themes/Geometrium-template/img/main_video.mp4" type="video/mp4">
         </video>
 
         <button id="playBtn"
