@@ -264,16 +264,26 @@ rowContainer.innerHTML = `
 //section 8
 
 function toggleVideo() {
-  if (video.paused) {
-    video.play();
-    playBtn.style.backgroundColor = "#ddd";
-  } else {
-    video.pause();
-    playBtn.style.backgroundColor = "#ccfe0f";
+    const preview = document.getElementById('previewVideo');
+    const video = document.getElementById('video');
+    const playBtn = document.getElementById('playBtn');
+
+    if (preview.style.display !== 'none') {
+      preview.style.display = 'none';
+      video.style.display = 'block';
+      video.play();
+      playBtn.style.backgroundColor = "#ddd";
+      return;
+    }
+
+    if (video.paused) {
+      video.play();
+      playBtn.style.backgroundColor = "#ddd";
+    } else {
+      video.pause();
+      playBtn.style.backgroundColor = "#ccfe0f";
+    }
   }
-}
-
-
 
 
 //section 9
