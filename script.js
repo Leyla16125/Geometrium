@@ -11,6 +11,7 @@ const container = document.getElementById("team");
 const video = document.getElementById("video");
 const playBtn = document.getElementById("playBtn");
 const awardsList = document.getElementById("awardsList");
+const imgSlider = document.getElementById("imgSlider");
 
 //section 3
 const projects = [
@@ -87,8 +88,8 @@ portfolio.innerHTML = projects.map(item => `
 
     </div>
 
-    <h3 class="mt-4 text-[22px] font-medium">${item.title}</h3>
-    <p class="text-gray-400">${item.description}</p>
+    <h3 class="mt-4 text-[20px] font-medium">${item.title}</h3>
+    <p class="text-[#6f6f6f] text-[20px]">${item.description}</p>
 
   </div>
 `).join('');
@@ -502,3 +503,94 @@ function prevSlide() {
 }
 
 renderSlide();
+
+
+
+const imgSliderData = [
+  {
+    id: 1,
+    img: 'https://geometrium.com/wp-content/themes/Geometrium-template/img/kinoteatr.webp',
+    info: 'Настоящий кинотеатр, который полностью звукоизолирован от других помещений загородного дома'
+  },
+  {
+    id: 2,
+    img: 'https://geometrium.com/wp-content/themes/Geometrium-template/img/saml.webp',
+    info: 'Переоборудовали фюзеляж Boeing 737 в жилую виллу на высоте 150 метров над уровнем океана'
+  },
+  {
+    id: 3,
+    img: 'https://geometrium.com/wp-content/themes/Geometrium-template/img/smart-home.webp',
+    info: 'Использовали SMART-стекло, которое может менять свою прозрачность, и скрывает от глаз рабочее пространство'
+  },
+  {
+    id: 4,
+    img: 'https://geometrium.com/wp-content/themes/Geometrium-template/img/loft.webp',
+    info: 'Спроектировали подиум, нижняя часть которого относится к кухне и в него встроена бытовая техника, а верхний ярус служит рабочим местом'
+  },
+  {
+    id: 5,
+    img: 'https://geometrium.com/wp-content/themes/Geometrium-template/img/smart-home.webp',
+    info: 'Система умный дом, которая отвечает за все электроприборы, безопасность, шторы, а также'
+  }
+];
+
+const techSliderRight = document.getElementById("techSliderRight");
+let techCurrentIndex = 0;
+
+function renderTechSlider() {
+  const item = imgSliderData[techCurrentIndex];
+
+  techSliderRight.innerHTML = `
+    <div>
+      <div class="group relative overflow-hidden">
+        <img 
+          src="${item.img}" 
+          class="w-full h-120 object-cover block"
+        >
+
+        <button
+          onclick="prevTechSlide()"
+          class="absolute left-8 top-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-[#ccfe0f] flex items-center justify-center text-[22px] text-black transition duration-300 ${
+            techCurrentIndex === 0
+              ? 'opacity-30 cursor-not-allowed'
+              : 'opacity-0 group-hover:opacity-100 cursor-pointer'
+          }"
+        >
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+
+        <button
+          onclick="nextTechSlide()"
+          class="absolute right-8 top-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-[#ccfe0f] flex items-center justify-center text-[22px] text-black transition duration-300 ${
+            techCurrentIndex === imgSliderData.length - 1
+              ? 'opacity-30 cursor-not-allowed'
+              : 'opacity-0 group-hover:opacity-100 cursor-pointer'
+          }"
+        >
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <div class="mt-6">
+        <p class="text-[20px] leading-[1.4] font-medium">${item.info}</p>
+      </div>
+    </div>
+  `;
+}
+
+function nextTechSlide() {
+  if (techCurrentIndex < imgSliderData.length - 1) {
+    techCurrentIndex++;
+    renderTechSlider();
+  }
+}
+
+function prevTechSlide() {
+  if (techCurrentIndex > 0) {
+    techCurrentIndex--;
+    renderTechSlider();
+  }
+}
+
+renderTechSlider();
+
