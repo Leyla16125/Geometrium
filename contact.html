@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <link href="https://fonts.googleapis.com/css2?family=TT+Commons:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon"  href="./favicon.png">
+
+</head>
+<body class="bg-[#ddd]">
+    
+    <header class="fixed top-0 left-0 w-full z-50 bg-[#ddd] px-20 flex justify-between">
+        <div class=" h-full  pt-3 ">
+            <p class="logo-hover cursor-pointer font-bold text-[38px] leading-[4.2rem] tracking-[-0.098rem] text-black">
+            geometrium studio
+            </p>
+        </div>
+
+       <div class=" h-full px-16 pt-9 ">
+          <nav class="flex justify-center">
+            <ul class="flex items-center gap-8 text-[18px] font-medium text-black mr-4">
+              <li class="link-hover relative inline-block cursor-pointer">услуги</li>
+              <li class="link-hover relative inline-block cursor-pointer">портфолио</li>
+              <li class="link-hover relative inline-block cursor-pointer">о компании</li>
+              <li class="link-hover relative inline-block cursor-pointer">school</li>
+              <li class="link-hover relative inline-block cursor-pointer">
+                <a href="contact.html">контакты</a>
+              </li>            
+            </ul>
+
+            <div class="ml-4 mt-1">
+              <div class="relative  transition-transform duration-1000 ease-in-out"
+                style="transform-style: preserve-3d;" onmouseenter="this.style.transform='rotateX(180deg)'"`
+                onmouseleave="this.style.transform='rotateX(0deg)'">
+
+                <div class="absolute inset-0  text-[14px] font-normal cursor-pointer"
+                  style="backface-visibility: hidden;">
+                  ru
+                </div>
+
+                <div class="absolute inset-0 text-[14px] font-normal cursor-pointer"
+                  style="backface-visibility: hidden; transform: rotateX(180deg);">
+                  en
+                </div>
+
+              </div>
+            </div>
+          </nav>
+
+          <div class="mt-4 flex items-center justify-center gap-5">
+            <img src="img/messenger.png" class="w-6 h-6 object-contain" alt="messenger">
+            <img src="img/telegram.png" class="w-6 h-6 object-contain" alt="telegram">
+
+            <p class=" ml-2 text-[18px] font-medium underline text-black hover:text-[#ccfe0f] cursor-pointer">
+              +7 (499) 444-68-16
+            </p>
+
+            <p class="text-[18px] font-semibold link-hover relative inline-block cursor-pointer">заказать звонок</p>
+          </div>
+
+          
+        </div>
+    </header>
+
+    <section class="m-20">
+        <h1 class="mb-4 font-medium">Контакты</h1>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+
+            <div class="bg-[#d7d7d7] w-full p-10 min-h-107 flex flex-col justify-between">
+            <h2 class="font-medium text-[30px] max-w-87 leading-[1.2]">
+                Контакты для консультации
+            </h2>
+
+            <div>
+                <div class="mt-20 flex gap-6 text-[14px] font-medium">
+                <a class="link-hover2">telegram</a>
+                <a class="link-hover2">whatsapp</a>
+                </div>
+
+                <a class="mt-2 inline-block link-hover2 text-[16px] font-medium">
+                заказать звонок
+                </a>
+            </div>
+
+            <div>
+                <div class="flex gap-8 text-[14px] font-medium mt-10">
+                <span class="link-hover2">москва</span>
+                <span class="link-hover2 ">бали</span>
+                <span class="link-hover2 ">гонконг</span>
+                </div>
+
+                <p class="mt-4 text-[24px] font-medium link-hover2 w-fit">
+                + 7 495 374-99-5
+                </p>
+            </div>
+            </div>
+
+            <div class="bg-[#d7d7d7] w-full p-10 min-h-107 flex flex-col justify-between">
+            <h2 class="font-medium text-[30px] max-w-87 leading-[1.2]">
+                Контакт для сотрудничества
+            </h2>
+
+            <div>
+                <a href="mailto:sales@geometrium.com" class="mt-30 inline-block link-hover2 text-[14px] font-medium">
+                sales@geometrium.com
+                </a>
+            </div>
+
+            <button class="btn-shine relative overflow-hidden border border-black px-6 py-4 uppercase cursor-pointer mt-10 w-fit">
+                <span class="relative z-10">
+                Заполнить анкету партнера
+                </span>
+                <span class="shine"></span>
+            </button>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-[#d7d7d7] w-full p-10 min-h-107 flex flex-col justify-between">
+            <h2 class="font-medium text-[30px] max-w-87   leading-[1.2]">
+                Контакт для СМИ
+            </h2>
+
+            <p class="mt-6 text-[20px] leading-[1.4] max-w-87">
+                Если вы хотите сделать нам интересное предложение —
+                отправьте письмо на почту
+            </p>
+
+            <a href="mailto:pr@geometrium.com" class="mt-auto link-hover2 text-[14px] font-medium w-fit">
+                pr@geometrium.com
+            </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class=" my-20 ">
+    <p class="text-[38px] leading-[1.4]   mx-auto w-200 font-medium">Приезжайте к нам в гости</p>
+    <p class="lg:ml-62 text-[#abb8c3] my-4 text-[30px] font-light">+</p>
+    <p class="text-[24px] leading-[1.4]  mb-6 mx-auto w-200 font-medium">Познакомим с нашей командой, проконсультируем по всем вопросам, предварительно рассчитаем ваш проект и угостим вкусным кофе</p>
+
+    <div class="relative w-full h-screen overflow-hidden">
+      <img
+        src="https://geometrium.com/wp-content/uploads/2024/02/film_geometrium.jpg"
+        class="h-full max-w-none animate-pan-x"
+      >
+    </div>
+      <div class="relative">
+        <p class="absolute -bottom-10 right-10 text-[#ccfe0f] font-bold text-[160px]">
+          geometrium
+        </p>
+      </div>
+
+
+      <div class="mt-20">
+        <p class="text-[40px]  leading-[1.4]  mb-6 mx-auto w-200 ">
+        Geometrium готов разработать
+        и реализовать узнаваемый архитектурный проект или проект дизайна интерьера
+        в любой точке мира
+        </p>
+
+        <div class="flex justify-center items-start gap-30 mx-20 my-20">
+
+            <div class="max-w-100">
+                <p class="text-[#abb8c3] text-[30px] font-light mb-6">+</p>
+
+                <p class="text-[24px] leading-[1.2] font-medium mb-10">
+                    Головной офис расположен<br>в Москве
+                </p>
+
+                <p class="text-[18px] font-medium mb-4">
+                    Центр дизайна ARTPLAY
+                </p>
+
+                <p class="text-[16px] leading-[1.6] text-black">
+                    ул. Нижняя Сыромятническая, д. 10, корп. 8,<br>
+                    эт. 2, офис 302 <span class="text-[#6f6f6f] font-medium">(напротив Poliform)</span>
+                </p>
+
+                <p class="font-medium text-[16px] link-hover2 ">
+                    Посмотреть план ARTPLAY
+                </p>
+            </div>
+
+            <div class="bg-white px-14 pb-8 w-[100] min-h-[75] flex flex-col justify-between">
+
+                <p class="text-[#abb8c3] text-[30px] font-light">+</p>
+
+                <p class="text-[28px] leading-[1.2] font-medium mt-4 mb-4">
+                    Планируете строительство<br>на Бали?
+                </p>
+
+                <button class="btn-shine relative overflow-hidden border border-black px-10 py-6 uppercase cursor-pointer mt-10 w-full">
+                    <span class="relative z-10">
+                        ДОГОВОРИТЬСЯ О ВСТРЕЧЕ НА БАЛИ
+                    </span>
+                    <span class="shine"></span>
+                </button>
+            </div>
+
+        </div>
+      </div>
+
+
+    </section>
+
+
+  <section class=" my-20 mx-20">
+
+    <img src="https://geometrium.com/wp-content/themes/Geometrium-template/img/russian_cart.svg" alt="map"
+      class="py-10">
+
+
+  </section>
+
+
+    <footer class="bg-[#d7d7d7] px-20 ">
+    <div class="flex py-20">
+      <h2 class="text-[32px] font-bold leading-[1.1]">
+        geometrium <br> studio
+      </h2>
+
+      <p class="text-[12px] text-[#6f6f6f] mt-4 uppercase ml-34">
+        design & architecture
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+
+
+
+      <div class="text-[18px] space-y-2">
+
+        <p class="link-hover relative inline-block font-medium">Дизайн интерьера коммерческого помещения</p>
+        <p class="link-hover relative inline-block font-medium">Дизайн интерьера загородного дома</p>
+        <p class="link-hover relative inline-block font-medium">Дизайн интерьера туристических объектов</p>
+        <p class="link-hover relative inline-block font-medium">Дизайн интерьера квартиры</p>
+        <p class="link-hover relative inline-block font-medium">Дизайн интерьера студии</p>
+        <p class="link-hover relative inline-block font-medium">Дизайн интерьера премиум-класса</p>
+        <p class="link-hover relative inline-block font-medium">Дизайн интерьера по помещению</p>
+        <p class="link-hover relative inline-block font-medium">Дизайн интерьера по стилю</p>
+        <p class="link-hover relative inline-block font-medium">Разработка планировочного решения</p>
+        <p class="link-hover relative inline-block font-medium">Комплектация дизайн-проекта</p>
+        <p class="link-hover relative inline-block font-medium">Комплексное архитектурное проектирование</p>
+        <p class="link-hover relative inline-block font-medium">Декорирование интерьера</p>
+        <p class="link-hover relative inline-block font-medium">Авторский надзор</p>
+        <p class="link-hover relative inline-block font-medium">3D-визуализация интерьера</p>
+        <p class="link-hover relative inline-block font-medium">Экспертная оценка планировки</p>
+
+      </div>
+
+      <div class="text-[18px] space-y-2">
+
+        <p class="link-hover relative inline-block font-medium">услуги</p><br>
+        <p class="link-hover relative inline-block font-medium">портфолио</p><br>
+        <p class="link-hover relative inline-block font-medium">о компании</p><br>
+        <p class="link-hover relative inline-block font-medium">school</p><br>
+        <p class="link-hover relative inline-block font-medium">контакты</p><br>
+        <p class="link-hover relative inline-block font-medium">отзывы</p><br>
+        <p class="link-hover relative inline-block font-medium">блог</p><br>
+        <p class="link-hover relative inline-block font-medium">вакансии</p><br>
+        <p class="link-hover relative inline-block font-medium">видео</p>
+
+      </div>
+
+      <div class="space-y-4 text-[16px]">
+
+        <p class="text-[#6f6f6f] text-[14px] uppercase link-hover relative inline-block font-medium">контакты</p><br>
+
+        <p class="link-hover relative inline-block font-medium">telegram</p><br>
+        <p class="link-hover relative inline-block font-medium">whatsapp</p> <br />
+        <p class="link-hover relative inline-block font-medium">office@geometrium.com</p>
+
+        <p class=" mt-2 link-hover relative inline-block font-medium">
+          москва <span class="mx-2 text-[#6f6f6f]">бали гонконг</span>
+        </p>
+
+        <p class="link-hover relative inline-block font-medium">
+          + 7 495 141-20-91
+        </p><br>
+
+        <p class="link-hover relative inline-block font-medium">
+          заказать звонок
+        </p>
+
+        <div class="mt-6">
+          <p class="text-[#6f6f6f] text-[14px] link-hover relative inline-block font-medium  mb-2">адрес</p> <br>
+
+          <p class="link-hover relative inline-block font-medium">
+            ул. Нижняя Сыромятническая,<br>
+            д. 10, корп. 8, эт. 2, офис 302
+          </p>
+
+          <p class="text-[#6f6f6f] link-hover relative inline-block font-medium">
+            Центр дизайна ARTPLAY <br>
+            Москва, Россия
+          </p>
+        </div>
+
+      </div>
+
+      <div class="space-y-3 text-[16px]">
+
+        <p class="text-[#6f6f6f] text-[14px] uppercase mb-4 link-hover relative inline-block font-medium">соцсети</p>
+        <br>
+
+        <p class="link-hover relative inline-block font-medium">youtube (ru)</p><br>
+        <p class="link-hover relative inline-block font-medium">youtube (en)</p><br>
+        <p class="link-hover relative inline-block font-medium">вконтакте</p><br>
+        <p class="link-hover relative inline-block font-medium">telegram</p><br>
+        <p class="link-hover relative inline-block font-medium">instagram</p>
+
+      </div>
+
+    </div>
+
+
+    <div class="flex justify-between mt-30 pb-10">
+      <p>Политика конфиденциальности</p>
+      <div class="flex items-center gap-2  px-3 py-1.5 rounded-full w-fit group cursor-pointer">
+        <p class="text-sm text-[#6f6f6f] font-medium">made by</p>
+        
+        <div class="flex items-center gap-1.5  bg-[#c1c1c1] group-hover:bg-[#CCFE0F] px-2 rounded-full transition-all duration-200 mr-40">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <mask id="mask0_3730_34861" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="14" height="14">
+              <circle cx="7" cy="7" r="7" fill="url(#paint0_linear_3730_34861)"></circle>
+            </mask>
+            <g mask="url(#mask0_3730_34861)">
+              <path d="M1.99947 11.9506H11.899L6.94922 7.0009L1.99947 11.9506Z" fill="#CCFE0F"></path>
+              <circle cx="7" cy="7" r="5.5" stroke="#CCFE0F" stroke-width="3"></circle>
+            </g>
+            <defs>
+              <linearGradient id="paint0_linear_3730_34861" x1="7" y1="0" x2="7" y2="14" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FCCE02"></stop>
+                <stop offset="1" stop-color="#FCCE02"></stop>
+              </linearGradient>
+            </defs>
+          </svg>
+          
+          <p class="text-sm font-semibold  duration-200">
+            ConversionArt
+          </p>
+        </div>
+      </div>
+
+    </footer>
+</body>
+</html>

@@ -132,3 +132,79 @@
   transform: scaleX(1);
   transform-origin: left; 
 }
+
+
+/* contact css */
+
+.link-hover2 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+  padding-bottom: 4px;
+}
+
+.link-hover2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: black;
+}
+
+.link-hover2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #ccfe0f;
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.link-hover2:hover::after {
+  transform: scaleX(1);
+}
+
+.link-hover2:not(:hover)::after {
+  transform-origin: right;
+}
+
+.link-hover2:hover {
+  color: #ccfe0f;
+}
+
+
+/* logo */
+.logo-hover {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.logo-hover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #ccfe0f;
+  z-index: -1;
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.logo-hover:hover::before {
+  transform: scaleX(1);
+}
+
+.logo-hover:not(:hover)::before {
+  transform-origin: right;
+}
