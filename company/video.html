@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Студия дизайна интерьера в Москве - архитектурное бюро Geometrium </title>
+    <link rel="stylesheet" href="../output.css">
+    <link href="https://fonts.googleapis.com/css2?family=TT+Commons:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon"  href="../favicon.png">
+
+</head>
+<body class="bg-[#ddd]">
+    <header class="fixed top-0 left-0 w-full z-50  px-20 flex justify-between bg-[#ddd]">
+        <div class=" h-full  pt-3 ">
+            <a href="../index.html" class="logo-hover cursor-pointer font-bold text-[38px] leading-[4.2rem] tracking-[-0.098rem] text-black">
+            geometrium studio
+            </a>
+        </div>
+
+       <div class=" h-full px-16 pt-9 ">
+          <nav class="flex justify-center">
+            <ul class="flex items-center gap-8 text-[18px] font-medium text-black mr-4">
+              <li class="link-hover relative inline-block cursor-pointer">услуги</li>
+              <li class="link-hover relative inline-block cursor-pointer">
+                <a href="../portfolio.html">портфолио</a>
+              </li>
+              <li class="link-hover relative inline-block cursor-pointer">
+                <a href="company.html">о компании</a>
+              </li>
+              <li class="link-hover relative inline-block cursor-pointer">school</li>
+              <li class="link-hover relative inline-block cursor-pointer">
+                <a href="../contact.html">контакты</a>
+              </li>            
+            </ul>
+
+            <div class="ml-4 mt-1">
+              <div class="relative  transition-transform duration-1000 ease-in-out"
+                style="transform-style: preserve-3d;" onmouseenter="this.style.transform='rotateX(180deg)'"
+                onmouseleave="this.style.transform='rotateX(0deg)'">
+
+                <div class="absolute inset-0  text-[14px] font-normal cursor-pointer"
+                  style="backface-visibility: hidden;">
+                  ru
+                </div>
+
+                <div class="absolute inset-0 text-[14px] font-normal cursor-pointer"
+                  style="backface-visibility: hidden; transform: rotateX(180deg);">
+                  en
+                </div>
+
+              </div>
+            </div>
+          </nav>
+
+          <div class="mt-4 flex items-center justify-center gap-5">
+            <img src="../img/messenger.png" class="w-6 h-6 object-contain" alt="messenger">
+            <img src="../img/telegram.png" class="w-6 h-6 object-contain" alt="telegram">
+
+            <p class=" ml-2 text-[18px] font-medium underline text-black hover:text-[#ccfe0f] cursor-pointer">
+              +7 (499) 444-68-16
+            </p>
+
+            <p class="text-[18px] font-semibold link-hover relative inline-block cursor-pointer">заказать звонок</p>
+          </div>
+
+          
+        </div>
+    </header>
+
+      <section class="my-40 mx-20">
+  <p class="text-[38px] leading-[1.4] mx-auto w-200 font-medium">Задаем стандарты на рынке дизайна интерьера и
+    архитектурного проектирования</p>
+  <p class="lg:ml-62 text-[#abb8c3] my-4 text-[30px] font-light">+</p>
+  <p class="text-[24px] leading-[1.4] mb-6 mx-auto w-200 font-medium">Наши проекты обсуждают, приводят в пример, а из
+    сотен других студий самые требовательные клиенты выбирают нашу</p>
+
+  <div>
+    <div class="relative w-full cursor-pointer" onclick="toggleVideo()">
+
+      <video id="previewVideo" class="max-w-240 h-auto object-cover lg:ml-50"
+        autoplay muted loop playsinline>
+        <source src="https://geometrium.com/wp-content/themes/Geometrium-template/img/aleksey-preview.mp4"
+          type="video/mp4">
+      </video>
+
+      <video id="video" class="max-w-240 h-auto object-cover lg:ml-50"
+        style="display: none;">
+        <source src="https://geometrium.com/wp-content/themes/Geometrium-template/img/main_video.webm"
+          type="video/webm">
+        <source src="https://geometrium.com/wp-content/themes/Geometrium-template/img/main_video.mp4"
+          type="video/mp4">
+      </video>
+
+      <button id="playBtn"
+        class="absolute bottom-10 right-24 w-16 h-16 rounded-full bg-[#ccfe0f] flex items-center justify-center text-2xl">
+        <i class="fa-solid fa-play" style="color: #000;"></i>
+      </button>
+
+    </div>
+  </div>
+
+  <p class="text-[16px] leading-[1.4] mx-auto w-200 font-medium mt-20">Алексей Иванов</p>
+  <p class="text-[12px] leading-[1.4] mx-auto w-200 font-medium text-[#6f6f6f] mt-1">Архитектор-дизайнер,
+    <br> основатель Geometrium Studio
+  </p>
+      </section>
+
+
+  <section class="b px-20 py-20">
+
+    <p class=" text-white text-[78px] font-light uppercase ">С 2013 года</p>
+    <h2 class="text-[50px] leading-[1.05] tracking-[-0.04em] font-medium max-w-225">
+      Наша команда разработала более 900 архитектурных
+      и дизайн-проектов
+    </h2>
+
+    <div class="mt-10 flex items-start gap-6 max-w-170 lg:ml-52">
+      <span class="text-[30px] text-[#6f6f6f]">+</span>
+      <p class="text-[20px] leading-[1.6] mt-10">Многие из них получили высокую оценку жюри международных премий и
+        конкурсов</p>
+    </div>
+
+    <div id="awardsList" class="mt-20 lg:ml-52"></div>
+  </section>
+
+  <script>
+    function toggleVideo() {
+    const preview = document.getElementById('previewVideo');
+    const video = document.getElementById('video');
+    const playBtn = document.getElementById('playBtn');
+
+    if (preview.style.display !== 'none') {
+      preview.style.display = 'none';
+      video.style.display = 'block';
+      video.play();
+      playBtn.style.backgroundColor = "#ddd";
+      return;
+    }
+
+    if (video.paused) {
+      video.play();
+      playBtn.style.backgroundColor = "#ddd";
+    } else {
+      video.pause();
+      playBtn.style.backgroundColor = "#ccfe0f";
+    }
+  }
+
+
+//section 9
+const awards = [
+  {
+    img: "https://geometrium.com/wp-content/uploads/2025/11/RBG-_1__1.svg",
+    year: "2024",
+    text: "Победитель Russian Business Guide. ЛЮДИ ГОДА в номинации “ДИЗАЙНЕР ГОДА”",
+    yearClass: "text-black"
+  },
+  {
+    img: "https://geometrium.com/wp-content/uploads/2025/11/best_2__1.svg",
+    year: "2024",
+    text: "BEST RUSSIAN DESIGN AWARDS ( ЖК Neva Towers 2 )",
+    yearClass: "text-black"
+  },
+  {
+    img: "https://geometrium.com/wp-content/uploads/2024/01/logo-1.svg",
+    year: "2022",
+    text: "ADD Awards Победитель в номинации Проект «Лобби»",
+    yearClass: "text-black/70"
+  },
+  {
+    img: "https://geometrium.com/wp-content/uploads/2025/11/RBG-_1__1.svg",
+    year: "2024",
+    text: "Победитель Russian Business Guide. ЛЮДИ ГОДА в номинации “ДИЗАЙНЕР ГОДА”",
+    yearClass: "text-black"
+  },
+  {
+    img: "https://geometrium.com/wp-content/uploads/2025/11/best_2__1.svg",
+    year: "2024",
+    text: "BEST RUSSIAN DESIGN AWARDS ( ЖК Neva Towers 2 )",
+    yearClass: "text-black"
+  },
+  {
+    img: "https://geometrium.com/wp-content/uploads/2024/01/logo-1.svg",
+    year: "2022",
+    text: "ADD Awards Победитель в номинации Проект «Лобби»",
+    yearClass: "text-black/70"
+  }
+];
+
+
+awardsList.innerHTML = awards.map(item => `
+  <div class="group">
+    <div class="flex items-center gap-8 py-4 cursor-pointer">
+
+      <div class="w-20 h-20 shrink-0 flex items-center justify-center">
+        <div class="w-0 h-0 rounded-full bg-[#ccfe0f] overflow-hidden opacity-0 scale-0 group-hover:w-20 group-hover:h-20 group-hover:opacity-100 group-hover:scale-100 transition-all duration-500 ease-in-out flex items-center justify-center">
+          <img src="${item.img}" class="w-[70%] h-[70%] object-contain">
+        </div>
+      </div>
+
+      <div class="flex flex-1 items-center justify-between">
+        <div class="w-24 text-[18px] ${item.yearClass}">
+          ${item.year}
+        </div>
+
+        <div class="flex-1 text-[18px] text-right">
+          ${item.text}
+        </div>
+      </div>
+    </div>
+
+    <div class="relative h-px bg-black/20 overflow-hidden">
+      <span class="absolute left-0 top-0 h-full w-full bg-black origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-in-out"></span>
+    </div>
+  </div>
+`).join("");
+
+
+  </script>
+</body>
+</html>
