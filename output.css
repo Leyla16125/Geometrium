@@ -578,8 +578,14 @@
   .min-h-60 {
     min-height: calc(var(--spacing) * 60);
   }
+  .min-h-66 {
+    min-height: calc(var(--spacing) * 66);
+  }
   .min-h-80 {
     min-height: calc(var(--spacing) * 80);
+  }
+  .min-h-86 {
+    min-height: calc(var(--spacing) * 86);
   }
   .min-h-96 {
     min-height: calc(var(--spacing) * 96);
@@ -647,8 +653,14 @@
   .w-70 {
     width: calc(var(--spacing) * 70);
   }
+  .w-76 {
+    width: calc(var(--spacing) * 76);
+  }
   .w-80 {
     width: calc(var(--spacing) * 80);
+  }
+  .w-86 {
+    width: calc(var(--spacing) * 86);
   }
   .w-94 {
     width: calc(var(--spacing) * 94);
