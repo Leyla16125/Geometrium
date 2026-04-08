@@ -259,8 +259,6 @@
 
     <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
 
-
-
       <div class="text-[18px] space-y-2">
 
         <p class="link-hover relative inline-block font-medium">Дизайн интерьера коммерческого помещения</p>
@@ -346,7 +344,6 @@
 
     </div>
 
-
     <div class="flex justify-between mt-30 pb-10">
       <p>Политика конфиденциальности</p>
       <div class="flex items-center gap-2  px-3 py-1.5 rounded-full w-fit group cursor-pointer">
@@ -377,125 +374,6 @@
 
     </footer>
 
-    <script>
-    const blogs = [
-        {
-            title: "Стиль барокко в интерьере",
-            date: "02 апреля 2026",
-            category: "Статьи о дизайне интерьера",
-            image: "https://geometrium.com/wp-content/uploads/2026/04/image8-2.png",
-        },
-        {
-            title: "Сиреневый цвет в интерьере",
-            date: "02 апреля 2026",
-            category: "Статьи о дизайне интерьера",
-            image: "https://geometrium.com/wp-content/uploads/2026/04/image18.png",
-        },
-        {
-            title: "Интерьер спальни в светлых тонах",
-            date: "01 апреля 2026",
-            category: "Статьи о дизайне интерьера",
-            image: "https://geometrium.com/wp-content/uploads/2026/04/image1.png",
-        },
-        {
-            title: "Квартира в современном стиле: лучшие дизайн-проекты",
-            date: "31 марта 2026",
-            category: "Статьи о дизайне интерьера",
-            image: "https://geometrium.com/wp-content/uploads/2026/03/image1-4-600x346.jpg",
-        },
-        {
-            title: "Сиреневый цвет в интерьере",
-            date: "02 апреля 2026",
-            category: "Итальянский стиль в интерьере",
-            image: "https://geometrium.com/wp-content/uploads/2026/04/italyanskiy-stil-v-interere-600x399.png",
-        },
-        {
-            title: "Что такое графический дизайн",
-            date: "01 апреля 2026",
-            category: "Статьи о дизайне интерьера",
-            image: "https://geometrium.com/wp-content/uploads/2026/03/image3-4-600x400.png",
-        }
-        ];
-        
-        const blogsContainer = document.getElementById('blogs');
-
-        blogs.forEach(blog => {
-        const blogCard = document.createElement('div');
-        blogCard.className = "cursor-pointer";
-
-        blogCard.innerHTML = `
-        <div class="group">
-            <div class="relative overflow-hidden">
-                <img 
-                    src="${blog.image}" 
-                    alt="${blog.title}" 
-                    class="w-[400px] h-[240px] object-cover hover:scale-105 transition duration-500"
-                >
-
-                <div class="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition duration-300 cursor-pointer">
-                    <div class="w-14 h-14 bg-[#ccfe0f] hover:bg-white rounded-full flex items-center justify-center shadow-lg">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 016.364 
-                                6.364L12 20.364 4.318 12.682a4.5 4.5 0 010-6.364z" />
-                        </svg>
-                    </div>
-                </div>
-            </div>
-
-            <h2 class="mt-4 text-[18px] font-medium leading-tight">
-                ${blog.title}
-            </h2>
-
-            <div class="flex gap-3 text-[12px] text-[#6f6f6f] mt-2">
-                <span>${blog.date}</span>
-                <span>${blog.category}</span>
-            </div>
-        </div>
-    `;
-
-        blogsContainer.appendChild(blogCard);
-        });
-
-        const blogsContainerTwo = document.getElementById('blogstwo');
-
-        blogs.forEach(blog => {
-    const blogCard = document.createElement('div');
-    blogCard.className = "cursor-pointer";
-
-    blogCard.innerHTML = `
-        <div class="group">
-            <div class="relative overflow-hidden">
-                <img 
-                    src="${blog.image}" 
-                    alt="${blog.title}" 
-                    class="w-[400px] h-[240px] object-cover hover:scale-105 transition duration-500"
-                >
-
-                <div class="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition duration-300 cursor-pointer">
-                    <div class="w-14 h-14 bg-[#ccfe0f] hover:bg-white rounded-full flex items-center justify-center shadow-lg">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 016.364 
-                                6.364L12 20.364 4.318 12.682a4.5 4.5 0 010-6.364z" />
-                        </svg>
-                    </div>
-                </div>
-            </div>
-
-            <h2 class="mt-4 text-[18px] font-medium leading-tight">
-                ${blog.title}
-            </h2>
-
-            <div class="flex gap-3 text-[12px] text-[#6f6f6f] mt-2">
-                <span>${blog.date}</span>
-                <span>${blog.category}</span>
-            </div>
-        </div>
-    `;
-
-    blogsContainerTwo.appendChild(blogCard);
-    });
-    </script>
+    <script src="blog.js" ></script>
 </body>
 </html>

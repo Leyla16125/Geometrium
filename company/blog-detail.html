@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог о дизайне интерьера студии Geometrium </title>
+    <link rel="stylesheet" href="../output.css">
+    <link href="https://fonts.googleapis.com/css2?family=TT+Commons:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon"  href="../favicon.png">
+
+</head>
+<body class="bg-[#ddd]">
+    <header id="mainHeader" class="fixed top-0 left-0 w-full z-50 px-40 flex justify-between transition-all duration-300">
+        <div class="h-full pt-3">
+            <a href="../index.html" class="logo-hover cursor-pointer font-bold text-[38px] leading-[4.2rem] tracking-[-0.098rem] text-white">
+            geometrium studio
+            </a>
+        </div>
+
+        <div class="h-full px-16 pt-9">
+        <nav class="flex justify-center">
+            <ul class="flex items-center gap-8 text-[18px] font-medium text-white mr-4">
+            <li class="link-hover relative inline-block cursor-pointer">услуги</li>
+            <li class="link-hover relative inline-block cursor-pointer">
+                <a href="../portfolio.html">портфолио</a>
+            </li>
+            <li class="link-hover relative inline-block cursor-pointer">
+                <a href="company.html">о компании</a>
+            </li>
+            <li class="link-hover relative inline-block cursor-pointer">school</li>
+            <li class="link-hover relative inline-block cursor-pointer">
+                <a href="../contact.html">контакты</a>
+            </li>            
+            </ul>
+
+            <div class="ml-4 mt-1">
+            <div class="relative transition-transform duration-1000 ease-in-out"
+                style="transform-style: preserve-3d;" onmouseenter="this.style.transform='rotateX(180deg)'"
+                onmouseleave="this.style.transform='rotateX(0deg)'">
+
+                <div class="absolute inset-0 text-[14px] font-normal cursor-pointer text-white"
+                style="backface-visibility: hidden;">
+                ru
+                </div>
+
+                <div class="absolute inset-0 text-[14px] font-normal cursor-pointer text-white"
+                style="backface-visibility: hidden; transform: rotateX(180deg);">
+                en
+                </div>
+
+            </div>
+            </div>
+        </nav>
+
+        <div class="mt-4 flex items-center justify-center gap-5">
+            <img src="../img/messenger.png" class="w-6 h-6 object-contain" alt="messenger">
+            <img src="../img/telegram.png" class="w-6 h-6 object-contain" alt="telegram">
+
+            <p class="ml-2 text-[18px] font-medium underline text-white hover:text-[#ccfe0f] cursor-pointer">
+            +7 (499) 444-68-16
+            </p>
+
+            <p class="text-[18px] font-semibold link-hover relative inline-block cursor-pointer text-white">заказать звонок</p>
+        </div>
+        </div>
+    </header>
+
+    <section id="heroSection" class="h-125 bg-cover bg-center">
+        <a href="blog.html" class="absolute left-20 top-1/4 -translate-y-1/2 w-10 h-10 rounded-full bg-[#ccfe0f] flex items-center justify-center text-[24px] text-black cursor-pointer z-20">
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
+
+         <div class="absolute bottom-60 left-40 text-white z-20 max-w-200">
+    
+            <h1 id="title" class="text-[36px] leading-[1.05] tracking-[-0.04em] font-medium">
+            </h1>
+
+            <div class="flex gap-6 mt-6 text-[14px] text-white/90">
+            <span id="date"></span>
+            <span id="category"></span>
+        </div>
+
+  </div>
+    </section>
+
+    <section class="px-40 py-8">
+      <div class="max-w-180 mx-auto">
+
+        <div class="space-x-30 space-y-8 text-[22px]  font-medium ">
+          <p>Серый цвет на кухне — это про сдержанную роскошь, благородство линий и бесконечные возможности для индивидуального высказывания. Именно поэтому он уже больше десяти лет держится в топе интерьерных решений для кухни и не собирается сдавать позиции.</p>
+          <p>Этот цвет умеет делать пространство особенным. Он стоит на границе теплого и холодного, спокойного и экспрессивного, классического и авангардного. Именно эта двойственность делает его таким интересным инструментом в руках дизайнера.</p>
+        </div>
+
+        <div class="mt-10">
+          <img id="blogimg"
+            class="w-full h-auto object-cover"
+          >
+        </div>
+
+        <div>
+          <p class="text-[22px] font-medium mb-6">Содержание:</p>
+
+          <ul class="space-y-4 text-[22px] leading-[1.4] text-[#6f6f6f]">
+            <li class="link-hover relative hover:inline-block cursor-pointer">- Особенности сиреневого цвета</li>
+            <li class="link-hover relative hover:inline-block cursor-pointer">- Психологическое восприятие</li>
+            <li class="link-hover relative hover:inline-block cursor-pointer">- Плюсы и минусы</li>
+            <li class="link-hover relative hover:inline-block cursor-pointer">- Оттенки и применение</li>
+            <li class="link-hover relative hover:inline-block cursor-pointer">- Лучшие сочетания</li>
+            <li class="link-hover relative hover:inline-block cursor-pointer">- Сиреневый в интерьере</li>
+          </ul>
+        </div>
+
+        <div class="bg-[#ddd] py-20 px-10">
+          <div class="max-w-6xl mx-auto">
+
+            <div class="flex items-center gap-6 ">
+              
+              <div class="w-26 h-26 overflow-hidden ">
+                <img 
+                  src="https://geometrium.com/wp-content/uploads/2024/01/employee-card-lit.webp"
+                  class="bg-[#ccfe0f]  w-full h-full  "
+                >
+              </div>
+
+              <div>
+                <p class="text-[14px]  text-black">Валерия Литвиненко</p>
+                <p class="text-[12px] text-[#6f6f6f]"> Арт-директор интерьерного направления</p>
+              </div>
+
+            </div>
+
+            <div class="bg-white p-12 relative">
+              
+              <div class="absolute top-6 left-6 text-[80px] text-[#cfd6dc] leading-none">“</div>
+
+              <p class="text-[16px] font-medium   max-w-3xl ml-10">
+                «Светлые лавандовые фасады создают свежий, весенний образ. В сочетании со столешницей из белого или светло-серого камня и металлической фурнитурой получается современная кухня без штампов. Темные оттенки (баклажан, сливовый) на нижних фасадах при светлых верхних дают эффектный контраст, при этом не перегружая пространство».
+              </p>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div>
+          <p class="text-[38px] font-medium my-6">Особенности сиреневого цвета</p>
+          <div class="space-x-30 space-y-8 text-[22px]  font-medium ">
+            <p>Сиреневый занимает особое место в цветовом спектре. Он находится между синим и фиолетовым, смещаясь то в сторону холодной голубизны, то в сторону теплого розового. Это не просто один цвет, а целое семейство оттенков, объединенных общей природой: все они получаются при смешении красного и синего в разных пропорциях с добавлением белого.</p>
+            <p>С точки зрения физики, сиреневый и лиловый находятся в коротковолновой части видимого спектра, ближе к фиолетовому. Именно поэтому глаз воспринимает его как один из наиболее «сложных» цветов. Он не существует в природе как монохроматический, а всегда является смесью. Это и делает его визуально богатым и многогранным.</p>
+            <p>В быту понятия «сиреневый», «лиловый» и «фиолетовый» часто используются как синонимы, хотя между ними есть разница. Фиолетовый — более темный и насыщенный, с явным синим подтоном. Лиловый — светлее, с теплым розовым отливом. Сиреневый — нежный, пастельный вариант, названный в честь цветка сирени. В дизайне интерьера все три оттенка объединяют под общим понятием «сиреневая палитра», и каждый из них решает свои задачи.</p>
+            <p>Сиреневый — один из самых светочувствительных цветов в интерьере. При разном освещении он способен кардинально менять характер. При дневном северном свете — холодный и почти серый. При теплых лампах уходит в розовый. При ярком южном солнце раскрывается в полную силу. Это — свойство, которое нужно знать и использовать.</p>
+          </div>
+
+
+
+        </div>
+
+        <div>
+          <p class="text-[38px] font-medium mt-10 mb-6">Психологическое восприятие сиреневого цвета</p>
+          <div class="space-x-30 space-y-8 text-[22px]  font-medium ">
+            <p>Сиреневый занимает особое место в цветовом спектре. Он находится между синим и фиолетовым, смещаясь то в сторону холодной голубизны, то в сторону теплого розового. Это не просто один цвет, а целое семейство оттенков, объединенных общей природой: все они получаются при смешении красного и синего в разных пропорциях с добавлением белого.</p>
+            <p>С точки зрения физики, сиреневый и лиловый находятся в коротковолновой части видимого спектра, ближе к фиолетовому. Именно поэтому глаз воспринимает его как один из наиболее «сложных» цветов. Он не существует в природе как монохроматический, а всегда является смесью. Это и делает его визуально богатым и многогранным.</p>
+            <p>В быту понятия «сиреневый», «лиловый» и «фиолетовый» часто используются как синонимы, хотя между ними есть разница. Фиолетовый — более темный и насыщенный, с явным синим подтоном. Лиловый — светлее, с теплым розовым отливом. Сиреневый — нежный, пастельный вариант, названный в честь цветка сирени. В дизайне интерьера все три оттенка объединяют под общим понятием «сиреневая палитра», и каждый из них решает свои задачи.</p>
+            <p>Сиреневый — один из самых светочувствительных цветов в интерьере. При разном освещении он способен кардинально менять характер. При дневном северном свете — холодный и почти серый. При теплых лампах уходит в розовый. При ярком южном солнце раскрывается в полную силу. Это — свойство, которое нужно знать и использовать.</p>    
+        </div>
+
+
+
+        </div>
+
+    <section class="bg-[#ddd]  py-20 relative">
+      <div class="mx-auto relative min-h-60">
+
+        <div class="flex flex-col items-center justify-center text-center">
+          <p class="text-[24px] leading-[1.1] font-medium text-black">
+            Понравилась статья?
+          </p>
+
+          <div class="mt-8 w-24 h-24 hover:bg-white rounded-full bg-[#ccfe0f] flex items-center justify-center cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-14 h-14 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 016.364 
+                6.364L12 20.364 4.318 12.682a4.5 4.5 0 010-6.364z" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="flex justify-between  w-full text-[20px] font-medium gap-40 my-10">
+          <div>
+            <a href="blog.html" class="flex items-center gap-6 cursor-pointer">
+              <div class="w-14 h-14 rounded-full bg-[#ccfe0f] flex items-center justify-center text-[24px] text-black ">
+                <i class="fa-solid fa-arrow-left"></i>
+              </div>
+              <span class="text-[22px] font-medium text-black whitespace-nowrap">в блог</span>
+            </a>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <span class="text-[#7b7b7b] whitespace-nowrap">поделиться</span>
+            <a class="border-b border-black leading-none">vk</a>
+            <a class="border-b border-black leading-none">telegram</a>
+            <a class="border-b border-black leading-none">whatsapp</a>
+            <a class="border-b border-black leading-none">одноклассники</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+      </div>
+    </section>
+
+    <section class=" px-5 md:px-10 lg:px-20">
+      <p class="pb-4 font-medium text-[36px]">Читайте другие наши статьи</p>
+        <div id="exampleblog" class="grid grid-cols-1 sm:grid-cols-3 gap-10 "></div>
+    </section>
+
+    <section class="mx-20 my-20">
+    <div class="bg-[#d7d7d7] w-full max-w-200 min-h-60  pb-24">
+      <p class="leading-[1.18] text-[18px] md:text-[38px] font-medium tracking-[-0.04em] max-w-200">
+        Напишите нам в удобных мессенджерах
+        или позвоните, и мы ответим на любые
+        ваши вопросы
+      </p>
+    </div>
+
+    <div class="flex justify-end -mt-0.5 mr-20">
+      <div class="flex items-start">
+
+        <div class="text-right font-light mr-6 mt-6">
+          <p class="text-[14px] text-black leading-[1.2]">
+            Виктория Булатникова
+          </p>
+          <p class="text-[12px] text-[#6f6f6f] mt-1 leading-[1.35]">
+            Менеджер по работе<br>с клиентами
+          </p>
+        </div>
+
+        <img
+          src="https://geometrium.com/wp-content/uploads/2024/01/manager-3.png"
+          class="w-27 h-27 object-cover object-top bg-[#ccfe0f]"
+        >
+
+        <div class="bg-white flex flex-col justify-start w-86 min-h-66 px-8 py-8">
+          <div class="flex items-start gap-10 mb-4">
+            <div class="flex flex-col">
+              <span class="text-[12px] font-medium mt-4">москва</span>
+            </div>
+
+            <span class="text-[12px] font-medium mt-4">бали</span>
+            <span class="text-[12px] font-medium mt-4">гонконг</span>
+          </div>
+
+          <p class="text-[22px] font-medium text-black mb-8 underline">
+            + 7 495 141-20-91
+          </p>
+
+          <div class="space-y-2">
+            <p class="text-[16px] font-medium cursor-pointer link-hover2 relative inline-block w-fit">
+              telegram
+            </p><br>
+
+            <p class="text-[16px] font-medium cursor-pointer link-hover2 relative inline-block w-fit">
+              whatsapp
+            </p><br>
+
+            <p class="text-[16px] font-medium cursor-pointer link-hover2 relative inline-block w-fit">
+              заказать звонок
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+   </section>
+
+  
+    <section class="px-20 my-6">
+        <div class="bg-[#d7d7d7]  p-10 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+
+        <div class="mt-5">
+            <h2 class="text-[20px] md:text-[44px] leading-[1.05] font-medium tracking-[-0.04em] max-w-200">
+            Обсудите свой проект <br>
+            лично с арт-директором <br>
+            Geometrium
+            </h2>
+
+            <p class="mt-6 text-[18px] md:text-[20px] leading-8 max-w-240">У которого за плечами опыт реализации более 100
+            проектов в дизайне интерьера и архитектурного проектирования</p>
+
+            <div class="mt-12 lg:flex">
+
+            <div class="mt-70">
+                <p class="text-[12px] leading-[1.2] font-medium text-black">Валерия Литвиненко</p>
+                <p class="text-[8px] leading-[1.4] text-[#6f6f6f] mt-1 ">Арт-директор интерьерного направления </p>
+            </div>
+
+            <div
+                class="w-70 h-70 md:w-90 md:h-90  rounded-full bg-[#ccfe0f] overflow-hidden flex items-end justify-center">
+                <img src="https://geometrium.com/wp-content/uploads/2024/01/manager-6-big-ava.png"
+                class="w-full h-full object-cover">
+            </div>
+            </div>
+        </div>
+
+        <div class="relative ">
+            <div class="absolute left-0 top-0 text-[#6f6f6f] text-[32px]   font-light ">+</div>
+
+            <div class="lg:pl-10 mt-5">
+            <p class="text-[16px] md:text-[24px] leading-[1.35]  max-w-100">На онлайн-встрече вы расскажете о своих
+                пожеланиях, а специалист предложит варианты реализации</p>
+
+            <div class="mt-10 flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-[#ccfe0f] overflow-hidden">
+                <img src="https://geometrium.com/wp-content/uploads/2024/01/mini-manager-3.png"
+                    class="w-full h-full object-cover">
+                </div>
+                <div class="w-10 h-10 rounded-full bg-[#ccfe0f] overflow-hidden">
+                <img src="https://geometrium.com/wp-content/uploads/2024/01/mini-manager-5.png"
+                    class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <p class="mt-6 text-[16px] md:text-[20px] leading-[1.45] max-w-100">
+                Один из наших менеджеров свяжется с вами и согласует дату и время встречи
+                с арт-директором студии
+            </p>
+
+            <form class="mt-10 max-w-100">
+                <div>
+                <label class=" text-[12px] font-medium text-[#6f6f6f] mb-2">как к вам обращаться?</label>
+                <input type="text" placeholder="Иван"
+                    class="w-full h-14 bg-white px-6 text-[22px] font-medium outline-none border border-transparent focus:border-black">
+                </div>
+
+                <div class="mt-4">
+                <p class="text-[12px] font-medium text-[#6f6f6f] mb-3">удобный способ для связи</p>
+
+                <div class="flex flex-wrap gap-8 text-[12px] font-medium">
+                    <label class="flex items-center gap-2 cursor-pointer">
+                    <input type="radio" name="contact" class="accent-black">
+                    <span class="link-hover relative inline-block">whatsapp</span>
+                    </label>
+
+                    <label class="flex items-center gap-2 cursor-pointer">
+                    <input type="radio" name="contact" class="accent-black">
+                    <span class="link-hover relative inline-block ">telegram</span>
+                    </label>
+
+                    <label class="flex items-center gap-2 cursor-pointer">
+                    <input type="radio" name="contact" class="accent-black" checked>
+                    <span class="link-hover relative inline-block">звонок</span>
+                    </label>
+                </div>
+                </div>
+
+                <div class="mt-4">
+                <input type="tel" placeholder="Телефон"
+                    class="w-full h-14 bg-white px-6 text-[22px] font-medium outline-none border border-transparent focus:border-black">
+                </div>
+
+                <button type="submit"
+                class="btn-shine relative overflow-hidden border border-black w-full h-14 uppercase cursor-pointer mt-7 text-[16px]">
+                <span class="relative z-10">ОБСУДИТЬ ПРОЕКТ С АРТ-ДИРЕКТОРОМ</span>
+                <span class="shine"></span>
+                </button>
+
+                <label
+                class="mt-5 flex items-start gap-3 text-[10px] font-medium leading-[1.45] text-[#6f6f6f] cursor-pointer">
+                <input type="checkbox" class="mt-1">
+                <span>Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с
+                    <a class="text-black underline">Политикой конфиденциальности</a>
+                </span>
+                </label>
+            </form>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+
+    <footer class="bg-[#d7d7d7] px-20 ">
+    <div class="flex py-20">
+      <h2 class="text-[32px] font-bold leading-[1.1]">
+        geometrium <br> studio
+      </h2>
+
+      <p class="text-[12px] text-[#6f6f6f] mt-4 uppercase ml-34">
+        design & architecture
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+
+      <div class="text-[18px] space-y-2">
+
+        <p class="link-hover relative inline-block font-medium">Дизайн интерьера коммерческого помещения</p>
+        <p class="link-hover relative inline-block font-medium">Дизайн интерьера загородного дома</p>
+        <p class="link-hover relative inline-block font-medium">Дизайн интерьера туристических объектов</p>
+        <p class="link-hover relative inline-block font-medium">Дизайн интерьера квартиры</p>
+        <p class="link-hover relative inline-block font-medium">Дизайн интерьера студии</p>
+        <p class="link-hover relative inline-block font-medium">Дизайн интерьера премиум-класса</p>
+        <p class="link-hover relative inline-block font-medium">Дизайн интерьера по помещению</p>
+        <p class="link-hover relative inline-block font-medium">Дизайн интерьера по стилю</p>
+        <p class="link-hover relative inline-block font-medium">Разработка планировочного решения</p>
+        <p class="link-hover relative inline-block font-medium">Комплектация дизайн-проекта</p>
+        <p class="link-hover relative inline-block font-medium">Комплексное архитектурное проектирование</p>
+        <p class="link-hover relative inline-block font-medium">Декорирование интерьера</p>
+        <p class="link-hover relative inline-block font-medium">Авторский надзор</p>
+        <p class="link-hover relative inline-block font-medium">3D-визуализация интерьера</p>
+        <p class="link-hover relative inline-block font-medium">Экспертная оценка планировки</p>
+
+      </div>
+
+      <div class="text-[18px] space-y-2">
+
+        <p class="link-hover relative inline-block font-medium">услуги</p><br>
+        <p class="link-hover relative inline-block font-medium">портфолио</p><br>
+        <p class="link-hover relative inline-block font-medium">о компании</p><br>
+        <p class="link-hover relative inline-block font-medium">school</p><br>
+        <p class="link-hover relative inline-block font-medium">контакты</p><br>
+        <p class="link-hover relative inline-block font-medium">отзывы</p><br>
+        <p class="link-hover relative inline-block font-medium">блог</p><br>
+        <p class="link-hover relative inline-block font-medium">вакансии</p><br>
+        <p class="link-hover relative inline-block font-medium">видео</p>
+
+      </div>
+
+      <div class="space-y-4 text-[16px]">
+
+        <p class="text-[#6f6f6f] text-[14px] uppercase link-hover relative inline-block font-medium">контакты</p><br>
+
+        <p class="link-hover relative inline-block font-medium">telegram</p><br>
+        <p class="link-hover relative inline-block font-medium">whatsapp</p> <br />
+        <p class="link-hover relative inline-block font-medium">office@geometrium.com</p>
+
+        <p class=" mt-2 link-hover relative inline-block font-medium">
+          москва <span class="mx-2 text-[#6f6f6f]">бали гонконг</span>
+        </p>
+
+        <p class="link-hover relative inline-block font-medium">
+          + 7 495 141-20-91
+        </p><br>
+
+        <p class="link-hover relative inline-block font-medium">
+          заказать звонок
+        </p>
+
+        <div class="mt-6">
+          <p class="text-[#6f6f6f] text-[14px] link-hover relative inline-block font-medium  mb-2">адрес</p> <br>
+
+          <p class="link-hover relative inline-block font-medium">
+            ул. Нижняя Сыромятническая,<br>
+            д. 10, корп. 8, эт. 2, офис 302
+          </p>
+
+          <p class="text-[#6f6f6f] link-hover relative inline-block font-medium">
+            Центр дизайна ARTPLAY <br>
+            Москва, Россия
+          </p>
+        </div>
+
+      </div>
+
+      <div class="space-y-3 text-[16px]">
+
+        <p class="text-[#6f6f6f] text-[14px] uppercase mb-4 link-hover relative inline-block font-medium">соцсети</p>
+        <br>
+
+        <p class="link-hover relative inline-block font-medium">youtube (ru)</p><br>
+        <p class="link-hover relative inline-block font-medium">youtube (en)</p><br>
+        <p class="link-hover relative inline-block font-medium">вконтакте</p><br>
+        <p class="link-hover relative inline-block font-medium">telegram</p><br>
+        <p class="link-hover relative inline-block font-medium">instagram</p>
+
+      </div>
+
+    </div>
+
+    <div class="flex justify-between mt-30 pb-10">
+      <p>Политика конфиденциальности</p>
+      <div class="flex items-center gap-2  px-3 py-1.5 rounded-full w-fit group cursor-pointer">
+        <p class="text-sm text-[#6f6f6f] font-medium">made by</p>
+        
+        <div class="flex items-center gap-1.5  bg-[#c1c1c1] group-hover:bg-[#CCFE0F] px-2 rounded-full transition-all duration-200 mr-40">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <mask id="mask0_3730_34861" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="14" height="14">
+              <circle cx="7" cy="7" r="7" fill="url(#paint0_linear_3730_34861)"></circle>
+            </mask>
+            <g mask="url(#mask0_3730_34861)">
+              <path d="M1.99947 11.9506H11.899L6.94922 7.0009L1.99947 11.9506Z" fill="#CCFE0F"></path>
+              <circle cx="7" cy="7" r="5.5" stroke="#CCFE0F" stroke-width="3"></circle>
+            </g>
+            <defs>
+              <linearGradient id="paint0_linear_3730_34861" x1="7" y1="0" x2="7" y2="14" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FCCE02"></stop>
+                <stop offset="1" stop-color="#FCCE02"></stop>
+              </linearGradient>
+            </defs>
+          </svg>
+          
+          <p class="text-sm font-semibold  duration-200">
+            ConversionArt
+          </p>
+        </div>
+      </div>
+
+    </footer>
+
+    <script src="blog-detail.js"></script>
+   
+</body>
+</html>
