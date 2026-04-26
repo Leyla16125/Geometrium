@@ -4,87 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Студия дизайна интерьера в Москве - архитектурное бюро Geometrium </title>
-    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="../assets/css/output.css">
     <link href="https://fonts.googleapis.com/css2?family=TT+Commons:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="icon"  href="../favicon.png">
 
 </head>
 <body class="bg-[#ddd]">
-    <header class="fixed top-0 left-0 w-full z-50  px-20 flex justify-between bg-[#ddd]">
-        <div class=" h-full  pt-3 ">
-            <a href="../index.html" class="logo-hover cursor-pointer font-bold text-[38px] leading-[4.2rem] tracking-[-0.098rem] text-black">
-            geometrium studio
-            </a>
-        </div>
+<header class="fixed top-0 left-0 w-full z-50 bg-[#ddd] px-5 lg:px-20 flex justify-between items-start">
 
-       <div class=" h-full px-16 pt-9 ">
-          <nav class="flex justify-center">
-            <ul class="flex items-center gap-8 text-[18px] font-medium text-black mr-4">
-              <li class="link-hover relative inline-block cursor-pointer">услуги</li>
-              <li class="link-hover relative inline-block cursor-pointer">
-                <a href="../portfolio.html">портфолио</a>
-              </li>
-              <li class="link-hover relative inline-block cursor-pointer">
-                <a href="company.html">о компании</a>
-              </li>
-              <li class="link-hover relative inline-block cursor-pointer">school</li>
-              <li class="link-hover relative inline-block cursor-pointer">
-                <a href="../contact.html">контакты</a>
-              </li>            
-            </ul>
+  <div class="h-full pt-3">
+    <a href="../index.html" class="logo-hover cursor-pointer font-bold text-[24px] lg:text-[38px] leading-12 lg:leading-[4.2rem] tracking-[-0.098rem] text-black">
+      geometrium studio
+    </a>
+  </div>
 
-            <div class="ml-4 mt-1">
-              <div class="relative  transition-transform duration-1000 ease-in-out"
-                style="transform-style: preserve-3d;" onmouseenter="this.style.transform='rotateX(180deg)'"
-                onmouseleave="this.style.transform='rotateX(0deg)'">
+  <div class="hidden lg:block h-full px-16 pt-9">
+    <nav class="flex justify-center">
+      <ul class="flex items-center gap-8 text-[18px] font-medium text-black mr-4">
+        <li class="link-hover relative inline-block cursor-pointer">услуги</li>
+        <li class="link-hover relative inline-block cursor-pointer">
+          <a href="../portfolio.html">портфолио</a>
+        </li>
+        <li class="link-hover relative inline-block cursor-pointer">
+          <a href="/company/company.html">о компании</a>
+        </li>
+        <li class="link-hover relative inline-block cursor-pointer">school</li>
+        <li class="link-hover relative inline-block cursor-pointer">
+          <a href="../contact.html">контакты</a>
+        </li>
+      </ul>
+    </nav>
 
-                <div class="absolute inset-0  text-[14px] font-normal cursor-pointer"
-                  style="backface-visibility: hidden;">
-                  ru
-                </div>
+    <div class="mt-4 flex items-center justify-center gap-5">
+      <img src="../assets/img/messenger.png" class="w-6 h-6 object-contain" alt="messenger">
+      <img src="../assets/img/telegram.png" class="w-6 h-6 object-contain" alt="telegram">
 
-                <div class="absolute inset-0 text-[14px] font-normal cursor-pointer"
-                  style="backface-visibility: hidden; transform: rotateX(180deg);">
-                  en
-                </div>
+      <p class="ml-2 text-[18px] font-medium underline text-black hover:text-[#ccfe0f] cursor-pointer">
+        +7 (499) 444-68-16
+      </p>
 
-              </div>
-            </div>
-          </nav>
+      <p class="text-[18px] font-semibold link-hover relative inline-block cursor-pointer">заказать звонок</p>
+    </div>
+  </div>
 
-          <div class="mt-4 flex items-center justify-center gap-5">
-            <img src="../img/messenger.png" class="w-6 h-6 object-contain" alt="messenger">
-            <img src="../img/telegram.png" class="w-6 h-6 object-contain" alt="telegram">
+  <button onclick="openMobileMenu()" class="block lg:hidden pt-7 text-[24px]">
+    <i class="fa-solid fa-bars" style="color: rgb(0, 0, 0);"></i>
+  </button>
 
-            <p class=" ml-2 text-[18px] font-medium underline text-black hover:text-[#ccfe0f] cursor-pointer">
-              +7 (499) 444-68-16
-            </p>
+</header>
 
-            <p class="text-[18px] font-semibold link-hover relative inline-block cursor-pointer">заказать звонок</p>
-          </div>
+<div id="mobileMenu" class="fixed inset-0 bg-[#ccfe0f] z-99999 hidden px-5 pt-3 text-black">
 
-          
-        </div>
-    </header>
+  <div class="flex justify-between items-start">
+    <h3 class="text-[22px] font-black tracking-[-0.04em]">geometrium</h3>
 
-      <section class="my-40 mx-20">
-  <p class="text-[38px] leading-[1.4] mx-auto w-200 font-medium">Задаем стандарты на рынке дизайна интерьера и
-    архитектурного проектирования</p>
-  <p class="lg:ml-62 text-[#abb8c3] my-4 text-[30px] font-light">+</p>
-  <p class="text-[24px] leading-[1.4] mb-6 mx-auto w-200 font-medium">Наши проекты обсуждают, приводят в пример, а из
-    сотен других студий самые требовательные клиенты выбирают нашу</p>
+    <button onclick="closeMobileMenu()" class="text-[34px] leading-none">
+      ×
+    </button>
+  </div>
 
-  <div>
+  <div class="mt-8 flex items-start justify-between">
+    <div class="text-[10px] leading-[1.2] ml-2">
+      <p>ru</p>
+      <p>en</p>
+    </div>
+
+    <p class="text-[24px] font-black mr-28">studio</p>
+  </div>
+
+  <nav class="mt-8">
+    <ul class="space-y-5 text-[25px] font-medium">
+      <li><a href="portfolio.html">портфолио</a></li>
+      <li><a href="company/company.html">о компании</a></li>
+      <li><a href="#">school</a></li>
+      <li><a href="contact.html">контакты</a></li>
+    </ul>
+  </nav>
+
+  <div class="mt-8">
+    <p class="text-[20px] leading-none ml-4">•</p>
+
+    <div class="flex gap-10 text-[12px] font-medium">
+      <span>москва</span>
+      <span>бали</span>
+      <span>гонконг</span>
+    </div>
+
+    <p class="mt-4 text-[18px] font-medium underline">
+      + 7 495 141-20-9
+    </p>
+  </div>
+
+  <div class="mt-10 flex gap-8 text-[18px] font-medium">
+    <p>telegram</p>
+    <p>whatsapp</p>
+  </div>
+
+  <p class="mt-7 text-[18px] font-medium">заказать звонок</p>
+</div>
+
+<section class="my-10 md:my-20  px-5 md:px-10 lg:px-20 py-10 md:py-16 mt-24 lg:mt-32">
+
+  <p class="text-[28px] md:text-[34px] lg:text-[38px] leading-[1.2] md:leading-[1.4] w-full lg:w-200 mx-auto font-medium">
+    Задаем стандарты на рынке дизайна интерьера и
+    архитектурного проектирования
+  </p>
+
+  <p class="text-[#abb8c3] my-6 text-[28px] md:text-[30px] font-light lg:ml-62">
+    +
+  </p>
+
+  <p class="text-[22px] md:text-[24px] leading-[1.35] md:leading-[1.4] mb-8 w-full lg:w-200 mx-auto font-medium">
+    Наши проекты обсуждают, приводят в пример, а из
+    сотен других студий самые требовательные клиенты выбирают нашу
+  </p>
+
+  <div class="w-full lg:max-w-240 mx-auto">
     <div class="relative w-full cursor-pointer" onclick="toggleVideo()">
 
-      <video id="previewVideo" class="max-w-240 h-auto object-cover lg:ml-50"
+      <video id="previewVideo"
+        class="w-full h-52 sm:h-80 md:h-115 lg:h-auto object-cover"
         autoplay muted loop playsinline>
         <source src="https://geometrium.com/wp-content/themes/Geometrium-template/img/aleksey-preview.mp4"
           type="video/mp4">
       </video>
 
-      <video id="video" class="max-w-240 h-auto object-cover lg:ml-50"
+      <video id="video"
+        class="w-full h-52 sm:h-80 md:h-115 lg:h-auto object-cover"
         style="display: none;">
         <source src="https://geometrium.com/wp-content/themes/Geometrium-template/img/main_video.webm"
           type="video/webm">
@@ -93,36 +140,50 @@
       </video>
 
       <button id="playBtn"
-        class="absolute bottom-10 right-24 w-16 h-16 rounded-full bg-[#ccfe0f] flex items-center justify-center text-2xl">
+        class="absolute bottom-4 right-4 md:bottom-6 md:right-6 w-12 h-12 md:w-16 md:h-16 rounded-full bg-[#ccfe0f] flex items-center justify-center text-xl md:text-2xl">
         <i class="fa-solid fa-play" style="color: #000;"></i>
       </button>
 
     </div>
   </div>
 
-  <p class="text-[16px] leading-[1.4] mx-auto w-200 font-medium mt-20">Алексей Иванов</p>
-  <p class="text-[12px] leading-[1.4] mx-auto w-200 font-medium text-[#6f6f6f] mt-1">Архитектор-дизайнер,
-    <br> основатель Geometrium Studio
+  <div class="w-full lg:w-200 mx-auto mt-6 md:mt-10">
+    <p class="text-[16px] leading-[1.4] font-medium">
+      Алексей Иванов
+    </p>
+
+    <p class="text-[12px] leading-[1.4] font-medium text-[#6f6f6f] mt-1">
+      Архитектор-дизайнер,
+      <br> основатель Geometrium Studio
+    </p>
+  </div>
+
+</section>
+
+
+
+  <section class="b px-5 lg:px-20 py-10 lg:py-20">
+
+  <p class="text-white text-[36px] md:text-[58px] lg:text-[78px] font-light uppercase">
+    С 2013 года
   </p>
-      </section>
 
+  <h2 class="text-[26px] md:text-[38px] lg:text-[50px] leading-[1.1] lg:leading-[1.05] tracking-[-0.04em] font-medium max-w-full lg:max-w-225">
+    Наша команда разработала более 900 архитектурных
+    и дизайн-проектов
+  </h2>
 
-  <section class="b px-20 py-20">
+  <div class="mt-8 lg:mt-10 flex items-start gap-4 lg:gap-6 max-w-full lg:max-w-170 lg:ml-52">
+    <span class="text-[26px] lg:text-[30px] text-[#6f6f6f]">+</span>
+    <p class="text-[16px] lg:text-[20px] leading-normal lg:leading-[1.6] mt-4 lg:mt-10">
+      Многие из них получили высокую оценку жюри международных премий и
+      конкурсов
+    </p>
+  </div>
 
-    <p class=" text-white text-[78px] font-light uppercase ">С 2013 года</p>
-    <h2 class="text-[50px] leading-[1.05] tracking-[-0.04em] font-medium max-w-225">
-      Наша команда разработала более 900 архитектурных
-      и дизайн-проектов
-    </h2>
+  <div id="awardsList" class="mt-10 lg:mt-20 lg:ml-52"></div>
 
-    <div class="mt-10 flex items-start gap-6 max-w-170 lg:ml-52">
-      <span class="text-[30px] text-[#6f6f6f]">+</span>
-      <p class="text-[20px] leading-[1.6] mt-10">Многие из них получили высокую оценку жюри международных премий и
-        конкурсов</p>
-    </div>
-
-    <div id="awardsList" class="mt-20 lg:ml-52"></div>
-  </section>
+</section>
 
   <script>
     function toggleVideo() {
@@ -216,6 +277,13 @@ awardsList.innerHTML = awards.map(item => `
   </div>
 `).join("");
 
+    function openMobileMenu() {
+    document.getElementById("mobileMenu").classList.remove("hidden");
+  }
+
+  function closeMobileMenu() {
+    document.getElementById("mobileMenu").classList.add("hidden");
+  }
 
   </script>
 </body>

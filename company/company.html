@@ -4,105 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Студия дизайна интерьера в Москве - архитектурное бюро Geometrium </title>
-    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="../assets/css/output.css">
     <link href="https://fonts.googleapis.com/css2?family=TT+Commons:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="icon"  href="../favicon.png">
 
 </head>
 <body class="bg-[#ccfe0f]">
-    <header class="fixed top-0 left-0 w-full z-50  px-20 flex justify-between ">
-        <div class=" h-full  pt-3 ">
-            <a href="../index.html" class=" cursor-pointer font-bold text-[38px] leading-[4.2rem] tracking-[-0.098rem] text-black">
-            geometrium studio
-            </a>
-        </div>
 
-       <div class=" h-full px-16 pt-9 ">
-          <nav class="flex justify-center">
-            <ul class="flex items-center gap-8 text-[18px] font-medium text-black mr-4">
-              <li class=" relative inline-block cursor-pointer">услуги</li>
-              <li class="link-hover relative inline-block cursor-pointer">
-                <a href="../portfolio.html">портфолио</a>
-              </li>
-              <li class=" relative inline-block cursor-pointer">
-                <a href="company.html">о компании</a>
-              </li>
-              <li class=" relative inline-block cursor-pointer">school</li>
-              <li class=" relative inline-block cursor-pointer">
-                <a href="../contact.html">контакты</a>
-              </li>            
-            </ul>
+<header class="fixed top-0 left-0 w-full z-50 px-5 lg:px-20 flex justify-between items-start">
+  <div class="h-full pt-3">
+    <a href="../index.html" class="cursor-pointer font-bold text-[24px] lg:text-[38px] leading-12 lg:leading-[4.2rem] tracking-[-0.098rem] text-black">
+      geometrium studio
+    </a>
+  </div>
 
-            <div class="ml-4 mt-1">
-              <div class="relative  transition-transform duration-1000 ease-in-out"
-                style="transform-style: preserve-3d;" onmouseenter="this.style.transform='rotateX(180deg)'"`
-                onmouseleave="this.style.transform='rotateX(0deg)'">
+  <div class="hidden lg:block h-full px-16 pt-9">
+  </div>
 
-                <div class="absolute inset-0  text-[14px] font-normal cursor-pointer"
-                  style="backface-visibility: hidden;">
-                  ru
-                </div>
+  <button class="block lg:hidden pt-7 text-[24px]">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+</header>
 
-                <div class="absolute inset-0 text-[14px] font-normal cursor-pointer"
-                  style="backface-visibility: hidden; transform: rotateX(180deg);">
-                  en
-                </div>
+<section class="pt-28 lg:pt-30 px-5 lg:px-20">
+  <div class="relative w-full h-[calc(100vh-7rem)] lg:h-[calc(100vh-10rem)]">
 
-              </div>
-            </div>
-          </nav>
+    <div class="absolute left-1/2 top-0 -translate-x-1/2 w-px h-full lg:h-[90%] bg-black"></div>
+    <div class="absolute left-0 top-1/2 -translate-y-1/2 w-full h-px bg-black"></div>
 
-          <div class="mt-4 flex items-center justify-center gap-5">
-            <img src="../img/messenger.png" class="w-6 h-6 object-contain" alt="messenger">
-            <img src="../img/telegram.png" class="w-6 h-6 object-contain" alt="telegram">
+    <div class="grid grid-cols-2 grid-rows-2 w-full h-full">
 
-            <p class=" ml-2 text-[18px] font-medium underline text-black cursor-pointer">
-              +7 (499) 444-68-16
-            </p>
+      <a href="video.html" class="block relative hover:text-[#52525b] transition">
+        <p class="absolute top-4 lg:top-1 left-4 lg:left-10 text-[20px] lg:text-[24px] font-medium">
+          О компании
+        </p>
+      </a>
 
-            <p class="text-[18px] font-semibold link-hover relative inline-block cursor-pointer">заказать звонок</p>
-          </div>
+      <a href="review.html" class="block relative hover:text-[#52525b] transition">
+        <p class="absolute top-4 lg:top-1 left-4 lg:left-10 text-[20px] lg:text-[24px] font-medium">
+          Отзывы
+        </p>
+      </a>
 
-          
-        </div>
-    </header>
+      <a href="blog.html" class="block relative hover:text-[#52525b] transition">
+        <p class="absolute bottom-6 lg:bottom-10 left-4 lg:left-10 text-[20px] lg:text-[24px] font-medium">
+          Блог
+        </p>
+      </a>
 
+      <a href="vacancies.html" class="block relative hover:text-[#52525b] transition">
+        <p class="absolute bottom-6 lg:bottom-10 left-4 lg:left-10 text-[20px] lg:text-[24px] font-medium">
+          Вакансии
+        </p>
+      </a>
 
-    <section class="pt-30 px-20">
-      <div class="relative w-full h-[calc(100vh-10rem)]">
+    </div>
+  </div>
+</section>
 
-        <div class="absolute left-1/2 top-0 -translate-x-1/2 w-px h-[90%] bg-black"></div>
-        <div class="absolute left-0 top-1/2 -translate-y-1/2 w-full h-px bg-black"></div>
-
-        <div class="grid grid-cols-2 grid-rows-2 w-full h-full">
-
-          <a href="video.html" class="block relative hover:text-[#52525b] transition">
-            <p class="absolute top-1 left-10 text-[24px] font-medium">
-              О компании
-            </p>
-          </a>
-
-          <a href="review.html" class="block relative hover:text-[#52525b] transition">
-            <p class="absolute top-1 left-10 text-[24px] font-medium">
-              Отзывы
-            </p>
-          </a>
-
-          <a href="blog.html" class="block relative hover:text-[#52525b] transition">
-            <p class="absolute bottom-10 left-10 text-[24px] font-medium">
-              Блог
-            </p>
-          </a>
-
-          <a href="vacancies.html" class="block relative hover:text-[#52525b] transition">
-            <p class="absolute bottom-10 left-10 text-[24px] font-medium">
-              Вакансии
-            </p>
-          </a>
-
-        </div>
-      </div>
-    </section>
 </body>
 </html>

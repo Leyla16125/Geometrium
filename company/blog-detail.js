@@ -159,3 +159,11 @@ const blogimg = document.getElementById("blogimg");
 if(blog){
     blogimg.src = blog.image;
 }
+
+    function openMobileMenu() {
+    document.getElementById("mobileMenu").classList.remove("hidden");
+  }
+
+  function closeMobileMenu() {
+    document.getElementById("mobileMenu").classList.add("hidden");
+  }

@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "npx @tailwindcss/cli -i ./input.css -o ./output.css",
-    "watch": "npx @tailwindcss/cli -i ./input.css -o ./output.css --watch"
-  },
+  "build": "npx @tailwindcss/cli -i ./assets/css/input.css -o ./assets/css/output.css",
+  "watch": "npx @tailwindcss/cli -i ./assets/css/input.css -o ./assets/css/output.css --watch"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",

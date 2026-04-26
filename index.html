@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Студия дизайна интерьера в Москве - архитектурное бюро Geometrium </title>
-  <link rel="stylesheet" href="./output.css">
+  <link rel="stylesheet" href="./assets/css/output.css">
   <link href="https://fonts.googleapis.com/css2?family=TT+Commons:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="icon"  href="./favicon.png">
@@ -13,7 +13,7 @@
 
 <body class="bg-[#ddd]">
   <!-- section 1 -->
-  <section class="relative mx-20 h-136 ">
+  <section class="hidden md:block relative mx-20 h-136 ">
     <div class="flex">
       <div class="relative w-80 h-80 overflow-hidden bg-[#ddd]">
         <div class="absolute inset-0 bg-[#ccfe0f] animate-yellow-fill z-1"></div>
@@ -74,8 +74,8 @@
           </nav>
 
           <div class="mt-4 flex items-center justify-center gap-5">
-            <img src="img/messenger.png" class="w-6 h-6 object-contain" alt="messenger">
-            <img src="img/telegram.png" class="w-6 h-6 object-contain" alt="telegram">
+            <img src="./assets/img/messenger.png" class="w-6 h-6 object-contain" alt="messenger">
+            <img src="./assets/img/telegram.png" class="w-6 h-6 object-contain" alt="telegram">
 
             <p class=" ml-2 text-[18px] font-medium underline text-black hover:text-[#ccfe0f] cursor-pointer">
               +7 (499) 444-68-16
@@ -110,9 +110,135 @@
     </div>
 
   </section>
+  <section class="block lg:hidden relative bg-[#ddd] min-h-screen px-9 py-0 overflow-hidden">
 
-  <!-- section 2 -->
-  <section class="mx-20 ">
+    <div class="relative w-full h-40 overflow-hidden bg-[#ddd]">
+      <div class="absolute inset-x-0 top-0 h-18 bg-[#ccfe0f] animate-yellow-fill z-1"></div>
+      <div class="absolute inset-x-0 bottom-0 h-22 bg-[#ddd] animate-gray-rise z-2"></div>
+
+      <h3 class="relative z-3 pt-4 text-[32px] font-black tracking-[-0.04em]">
+        geometrium
+      </h3>
+
+      <button onclick="openMobileMenu()" class="absolute right-0 top-7 z-10 w-9 h-7 flex flex-col justify-between">
+        <i class="fa-solid fa-bars" style="color: rgb(0, 0, 0);"></i>
+      </button>
+
+      <p class="absolute left-0 bottom-0 z-3 text-[16px] uppercase leading-[1.35]">
+        design &<br>architecture
+      </p>
+
+      <p class="absolute right-7 -bottom-1.5 z-3 font-black tracking-[-0.04em] text-[36px]">
+        studio
+      </p>
+    </div>
+
+    <div class="absolute left-9 top-40 w-[64%] h-130 bg-[#d7d7d7]"></div>
+    <div class="absolute right-0 top-41 w-8 h-78 bg-[#e5e5e5]"></div>
+    <div class="absolute right-9 bottom-0 w-[30%] h-62 bg-[#d7d7d7]"></div>
+
+    <span class="absolute left-2 top-70 text-[34px] text-gray-500 font-light">+</span>
+    <span class="absolute right-4 top-70 text-[34px] text-gray-500 font-light">+</span>
+    <span class="absolute left-2 top-125 text-[34px] text-gray-500 font-light">+</span>
+    <span class="absolute right-4 top-125 text-[34px] text-gray-500 font-light">+</span>
+
+    <div class="relative z-10 mt-36">
+      <p class="text-[42px] leading-[1.13] tracking-[-0.04em] font-medium text-black">
+        Более 13 лет создаем пространства для жизни и бизнеса по всему миру
+      </p>
+    </div>
+
+    <div class="relative z-10 mt-20">
+      <p class="text-[24px] font-medium leading-[1.2]">
+        Реализуем ваши самые смелые мечты
+      </p>
+
+      <button class="mt-6 w-full border border-black py-5 uppercase text-[20px] font-medium">
+        получить расчет стоимости
+      </button>
+    </div>
+
+  </section>
+  <div id="mobileMenu" class="fixed inset-0 bg-[#ccfe0f] z-99999 hidden px-5 pt-3 text-black">
+
+  <div class="flex justify-between items-start">
+    <h3 class="text-[22px] font-black tracking-[-0.04em]">
+      geometrium
+    </h3>
+
+    <button onclick="closeMobileMenu()" class="text-[34px] leading-none">
+      ×
+    </button>
+  </div>
+
+  <div class="mt-8 flex items-start justify-between">
+    <div class="text-[10px] leading-[1.2] ml-2">
+      <p>ru</p>
+      <p>en</p>
+    </div>
+
+    <p class="text-[24px] font-black mr-28">
+      studio
+    </p>
+  </div>
+
+<nav class="mt-8">
+  <ul class="space-y-5 text-[25px] font-medium">
+
+    <li>
+      <a href="portfolio.html" onclick="closeMobileMenu()">
+        портфолио
+      </a>
+    </li>
+
+    <li>
+      <a href="company/company.html" onclick="closeMobileMenu()">
+        о компании
+      </a>
+    </li>
+
+    <li>
+      <a href="#" onclick="closeMobileMenu()">
+        school
+      </a>
+    </li>
+
+    <li>
+      <a href="contact.html" onclick="closeMobileMenu()">
+        контакты
+      </a>
+    </li>
+
+  </ul>
+</nav>
+
+  <div class="mt-8">
+    <p class="text-[20px] leading-none ml-4">•</p>
+
+    <div class="flex gap-10 text-[12px] font-medium">
+      <span>москва</span>
+      <span>бали</span>
+      <span>гонконг</span>
+    </div>
+
+    <p class="mt-4 text-[18px] font-medium underline">
+      + 7 495 141-20-9
+    </p>
+  </div>
+
+  <div class="mt-10 flex gap-8 text-[18px] font-medium">
+    <p>telegram</p>
+    <p>whatsapp</p>
+  </div>
+
+  <p class="mt-7 text-[18px] font-medium">
+    заказать звонок
+  </p>
+
+  </div>
+
+
+  <section class="hidden md:block mx-20 ">
     <div class="relative w-full overflow-hidden cursor-pointer" style="height: 600px;">
 
       <img id="mainImg"
@@ -168,430 +294,218 @@
   </section>
 
   <!-- section 3 -->
-  <section class=" px-5 md:px-10 lg:px-20 py-10 md:py-16">
+  <section class="px-5 md:px-10 lg:px-20 py-10 md:py-16">
     <p class="text-white uppercase tracking-wider text-[30px] md:text-[60px] lg:text-[80px] font-light leading-none">
-      ПОРТФОЛИО</p>
+      ПОРТФОЛИО
+    </p>
 
-    <div class="mt-6 text-[42px] leading-none tracking-[-0.056rem] font-medium text-black">
+    <div class="mt-6 text-[24px] md:text-[34px] lg:text-[42px] leading-tight tracking-[-0.056rem] font-medium text-black max-w-5xl">
       Каждый проект уникален, как и каждый клиент,
-      <br>
+      <br class="hidden md:block">
       который к нам обращается
     </div>
 
-    <div id="portfolio" class="grid grid-cols-1 sm:grid-cols-2 gap-10 my-20"></div>
+    <p class="text-[14px] md:text-[18px] leading-[2.4rem] tracking-[0.024rem] cursor-pointer font-bold link-hover relative inline-block mt-8 md:mt-12 md:ml-35">
+      Смотреть больше проектов
+    </p>
 
-
-    <p class="text-[18px] leading-[2.4rem] tracking-[0.024rem]  cursor-pointer lg:ml-10 font-bold link-hover relative inline-block" style="margin-left:140px">Смотреть больше проектов</p>
+    <div id="portfolio" class="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-14 my-10 md:my-20"></div>
   </section>
 
   <!-- section 4 -->
-  <h2 class="text-[2.2rem] font-medium mx-20 my-4">Результат соответствует дизайн-проекту</h2>
-  <section class=" mx-20 lg:flex  items-start gap-12 min-h-screen">
-    <div class="w-full max-w-195">
-      <div id="compareBox" class="relative w-full overflow-hidden cursor-ew-resize" style="height: 500px;"
-        onmousedown="startDrag(event)" onmousemove="drag(event)" onmouseup="stopDrag()" onmouseleave="stopDrag()"
-        ontouchstart="startTouch(event)" ontouchmove="moveTouch(event)" ontouchend="stopDrag()">
-        <img src="https://geometrium.com/wp-content/themes/Geometrium-template/img/ba-slider-2.webp" alt="left"
+<h2 class="text-[24px] md:text-[32px] lg:text-[36px] font-medium px-5 md:px-10 lg:px-20 my-6">
+  Результат соответствует дизайн-проекту
+</h2>
+
+<section class="px-5 md:px-10 lg:px-20 flex flex-col lg:flex-row items-start gap-8 lg:gap-12">
+
+  <div class="w-full lg:max-w-195">
+    <div id="compareBox"
+      class="relative w-full overflow-hidden cursor-ew-resize h-65 sm:h-88 md:h-112 lg:h-125"
+      onmousedown="startDrag(event)" onmousemove="drag(event)" onmouseup="stopDrag()" onmouseleave="stopDrag()"
+      ontouchstart="startTouch(event)" ontouchmove="moveTouch(event)" ontouchend="stopDrag()">
+
+      <img src="https://geometrium.com/wp-content/themes/Geometrium-template/img/ba-slider-2.webp"
+        class="absolute inset-0 w-full h-full object-cover pointer-events-none">
+
+      <div id="overlay" class="absolute inset-0 w-1/2 overflow-hidden">
+        <img src="https://geometrium.com/wp-content/themes/Geometrium-template/img/ba-slider-1.webp"
           class="absolute inset-0 w-full h-full object-cover pointer-events-none">
-
-        <div id="overlay" class="absolute inset-0 w-1/2 overflow-hidden">
-          <img src="https://geometrium.com/wp-content/themes/Geometrium-template/img/ba-slider-1.webp" alt="right"
-            class="absolute inset-0 w-full h-full object-cover pointer-events-none">
-        </div>
-
-        <div id="slider" class="absolute top-0 left-1/2 -translate-x-1/2 w-0.5 h-full bg-[#ccfe0f] z-20">
-          <div
-            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-[#ccfe0f] flex items-center justify-center text-black font-bold">
-            &lt;&gt;
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="font-medium flex flex-col justify-between h-125">
-      <div>
-        <p class="text-[26px]">Нева</p>
-        <p class="text-[#6f6f6f] text-[18px] ">113,5 м² Москва</p>
       </div>
 
-      <div>
-        <p>Получите реальный пример дизайн-проекта Geometrium</p>
-        <button class="btn-shine relative overflow-hidden border border-black px-6 py-4 uppercase cursor-pointer mt-4">
-          <span class="relative z-10">
-            ПОЛУЧИТЬ ПРИМЕР ДИЗАЙН-ПРОЕКТА
-          </span>
+      <div id="slider"
+        class="absolute top-0 left-1/2 -translate-x-1/2 w-0.5 h-full bg-[#ccfe0f] z-20">
 
-          <span class="shine"></span>
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <!-- section 5 -->
-  <h2 class="font-medium text-[40px] flex flex-col items-start w-fit mx-auto mb-6">
-    <br>В Geometrium работают
-    <br>только лучшие специалисты,
-    <br>по-другому просто не может быть
-  </h2>
-  <section class=" mx-20">
-    <div id="team" class="grid grid-cols-2 md:grid-cols-4 gap-6"></div>
-    <div id="teamRow" class="grid grid-cols-1 md:grid-cols-6 gap-6"></div>
-  </section>
-
-
-  <!-- section 6 -->
-  <section class=" px-20 my-6">
-    <p class="text-[28px] leading-[1.4]  mb-10 mx-auto w-200">У нас одна из самых крупных студий в России, которая
-      работает по всему миру</p>
-
-    <p class="left-20 top-40 text-7xl leading-[1.1]  text-white font-light">БОЛЕЕ 60 ДИЗАЙНЕРОВ <br> И АРХИТЕКТОРОВ</h1>
-
-
-    <p class="text-[28px] leading-[1.4]  mb-10 mx-auto w-200 mt-4">
-      И других специалистов смежных областей. Они искренне увлечены своим делом,
-      готовы принять любой вызов и создать проект, который превосходит ожидания клиента
-    </p>
-
-    <a class="link-hover relative inline-block text-[18px] lg:ml-52 cursor-pointer"> Как мы отбираем лучших</a>
-
-    <p class="left-20 top-40 text-4xl leading-[1.1] font-medium my-20">Можете быть уверены, что ваш проект будет доведен
-      до совершенства</p>
-
-    <p class="text-[28px] leading-[1.4]  mb-10 mx-auto w-200">Все составляющие проекта будут сделаны идеально, потому
-      что за каждый этап отвечает эксперт в своей области.</p>
-    <p class="text-[28px] leading-[1.4]  mb-10 mx-auto w-200">Арт-директор и ведущий дизайнер контролируют весь процесс
-      —от технического задания до реализации</p>
-
-
-  </section>
-
-
-  <!-- section 7 -->
-  <section class="px-20 my-6">
-    <div class="bg-[#d7d7d7]  p-10 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
-
-      <div class="mt-5">
-        <h2 class="text-[20px] md:text-[44px] leading-[1.05] font-medium tracking-[-0.04em] max-w-200">
-          Обсудите свой проект <br>
-          лично с арт-директором <br>
-          Geometrium
-        </h2>
-
-        <p class="mt-6 text-[18px] md:text-[20px] leading-8 max-w-240">У которого за плечами опыт реализации более 100
-          проектов в дизайне интерьера и архитектурного проектирования</p>
-
-        <div class="mt-12 lg:flex">
-
-          <div class="mt-70">
-            <p class="text-[12px] leading-[1.2] font-medium text-black">Валерия Литвиненко</p>
-            <p class="text-[8px] leading-[1.4] text-[#6f6f6f] mt-1 ">Арт-директор интерьерного направления </p>
-          </div>
-
-          <div
-            class="w-70 h-70 md:w-90 md:h-90  rounded-full bg-[#ccfe0f] overflow-hidden flex items-end justify-center">
-            <img src="https://geometrium.com/wp-content/uploads/2024/01/manager-6-big-ava.png"
-              class="w-full h-full object-cover">
-          </div>
-        </div>
-      </div>
-
-      <div class="relative ">
-        <div class="absolute left-0 top-0 text-[#6f6f6f] text-[32px]   font-light ">+</div>
-
-        <div class="lg:pl-10 mt-5">
-          <p class="text-[16px] md:text-[24px] leading-[1.35]  max-w-100">На онлайн-встрече вы расскажете о своих
-            пожеланиях, а специалист предложит варианты реализации</p>
-
-          <div class="mt-10 flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-[#ccfe0f] overflow-hidden">
-              <img src="https://geometrium.com/wp-content/uploads/2024/01/mini-manager-3.png"
-                class="w-full h-full object-cover">
-            </div>
-            <div class="w-10 h-10 rounded-full bg-[#ccfe0f] overflow-hidden">
-              <img src="https://geometrium.com/wp-content/uploads/2024/01/mini-manager-5.png"
-                class="w-full h-full object-cover">
-            </div>
-          </div>
-
-          <p class="mt-6 text-[16px] md:text-[20px] leading-[1.45] max-w-100">
-            Один из наших менеджеров свяжется с вами и согласует дату и время встречи
-            с арт-директором студии
-          </p>
-
-          <form class="mt-10 max-w-100">
-            <div>
-              <label class=" text-[12px] font-medium text-[#6f6f6f] mb-2">как к вам обращаться?</label>
-              <input type="text" placeholder="Иван"
-                class="w-full h-14 bg-white px-6 text-[22px] font-medium outline-none border border-transparent focus:border-black">
-            </div>
-
-            <div class="mt-4">
-              <p class="text-[12px] font-medium text-[#6f6f6f] mb-3">удобный способ для связи</p>
-
-              <div class="flex flex-wrap gap-8 text-[12px] font-medium">
-                <label class="flex items-center gap-2 cursor-pointer">
-                  <input type="radio" name="contact" class="accent-black">
-                  <span class="link-hover relative inline-block">whatsapp</span>
-                </label>
-
-                <label class="flex items-center gap-2 cursor-pointer">
-                  <input type="radio" name="contact" class="accent-black">
-                  <span class="link-hover relative inline-block ">telegram</span>
-                </label>
-
-                <label class="flex items-center gap-2 cursor-pointer">
-                  <input type="radio" name="contact" class="accent-black" checked>
-                  <span class="link-hover relative inline-block">звонок</span>
-                </label>
-              </div>
-            </div>
-
-            <div class="mt-4">
-              <input type="tel" placeholder="Телефон"
-                class="w-full h-14 bg-white px-6 text-[22px] font-medium outline-none border border-transparent focus:border-black">
-            </div>
-
-            <button type="submit"
-              class="btn-shine relative overflow-hidden border border-black w-full h-14 uppercase cursor-pointer mt-7 text-[16px]">
-              <span class="relative z-10">ОБСУДИТЬ ПРОЕКТ С АРТ-ДИРЕКТОРОМ</span>
-              <span class="shine"></span>
-            </button>
-
-            <label
-              class="mt-5 flex items-start gap-3 text-[10px] font-medium leading-[1.45] text-[#6f6f6f] cursor-pointer">
-              <input type="checkbox" class="mt-1">
-              <span>Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с
-                <a class="text-black underline">Политикой конфиденциальности</a>
-              </span>
-            </label>
-          </form>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-
-  <section class=" px-20 py-20">
-
-    <p class=" text-white text-[78px] font-light uppercase ">Услуги</p>
-
-    <p class="text-[46px] leading-[1.05] tracking-[-0.04em] font-medium max-w-250">
-      Эстетичные и функциональные пространства,
-      где все продумано до мелочей
-    </p>
-
-    <span class="text-[30px] text-[#6f6f6f] group-hover:text-black transition my-20 lg:ml-70 font-light">+</span>
-
-
-    <div class="m-10 mx-10">
-
-      <div class="flex items-center justify-between group cursor-pointer my-20">
-
-        <div class="max-w-100">
-          <div class="flex items-start gap-6">
-
-            <div>
-              <h3 class="text-[30px] font-medium leading-[1.2] link-hover relative inline-block cursor-pointer">Жилые
-                интерьеры</h3>
-
-              <p class="mt-4 text-[18px]  w-94  my-10">
-                Дизайн интерьеров квартир и домов, которые соответствуют
-                потребностям, образу и стилю жизни каждого члена семьи
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="w-140 h-90 overflow-hidden">
-          <img src="https://geometrium.com/wp-content/themes/Geometrium-template/img/img-sevice-1.jpg"
-            class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+        <div
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 md:w-11 md:h-11 rounded-full bg-[#ccfe0f] flex items-center justify-center text-black font-bold text-sm md:text-base">
+          &lt;&gt;
         </div>
 
       </div>
-
-      <div class="flex items-center justify-between group cursor-pointer my-20">
-
-        <div class="w-140 h-90 overflow-hidden">
-          <img src="https://geometrium.com/wp-content/themes/Geometrium-template/img/img-sevice-2.jpg"
-            class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
-
-
-        </div>
-
-        <div class="max-w-100">
-          <h3 class="text-[30px] font-medium leading-[1.2] link-hover relative inline-block cursor-pointer">Архитектура
-            для девелоперов</h3>
-
-          <p class="mt-4 text-[18px]  w-94  my-10">
-            Современные проекты поселков, апарт-отелей,
-            коммерческих зданий и комплексов
-          </p>
-        </div>
-
-      </div>
-
-      <div class="flex items-center justify-between group cursor-pointer">
-
-        <div class="max-w-100">
-          <div class="flex items-start gap-6">
-
-            <div>
-              <h3 class="text-[30px] font-medium leading-[1.2] link-hover relative inline-block cursor-pointer">
-                Интерьер для бизнеса и девелоперов
-              </h3>
-
-              <p class="mt-4 text-[18px]  w-94  my-10">
-                Дизайн интерьеров жилых комплексов, гостиниц,
-                офисов, ресторанов и других пространств
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- RIGHT IMAGE -->
-        <div class="w-140 h-90 overflow-hidden">
-          <img src="https://geometrium.com/wp-content/themes/Geometrium-template/img/img-sevice-3.jpg"
-            class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- section 8  -->
-  <section class="my-20 mx-20">
-  <p class="text-[38px] leading-[1.4] mx-auto w-200 font-medium">Задаем стандарты на рынке дизайна интерьера и
-    архитектурного проектирования</p>
-  <p class="lg:ml-62 text-[#abb8c3] my-4 text-[30px] font-light">+</p>
-  <p class="text-[24px] leading-[1.4] mb-6 mx-auto w-200 font-medium">Наши проекты обсуждают, приводят в пример, а из
-    сотен других студий самые требовательные клиенты выбирают нашу</p>
-
-  <div>
-    <div class="relative w-full cursor-pointer" onclick="toggleVideo()">
-
-      <video id="previewVideo" class="max-w-240 h-auto object-cover lg:ml-50"
-        autoplay muted loop playsinline>
-        <source src="https://geometrium.com/wp-content/themes/Geometrium-template/img/aleksey-preview.mp4"
-          type="video/mp4">
-      </video>
-
-      <video id="video" class="max-w-240 h-auto object-cover lg:ml-50"
-        style="display: none;">
-        <source src="https://geometrium.com/wp-content/themes/Geometrium-template/img/main_video.webm"
-          type="video/webm">
-        <source src="https://geometrium.com/wp-content/themes/Geometrium-template/img/main_video.mp4"
-          type="video/mp4">
-      </video>
-
-      <button id="playBtn"
-        class="absolute bottom-10 right-24 w-16 h-16 rounded-full bg-[#ccfe0f] flex items-center justify-center text-2xl">
-        <i class="fa-solid fa-play" style="color: #000;"></i>
-      </button>
-
     </div>
   </div>
 
-  <p class="text-[16px] leading-[1.4] mx-auto w-200 font-medium mt-20">Алексей Иванов</p>
-  <p class="text-[12px] leading-[1.4] mx-auto w-200 font-medium text-[#6f6f6f] mt-1">Архитектор-дизайнер,
-    <br> основатель Geometrium Studio
-  </p>
+  <div class="w-full flex flex-col gap-6 lg:gap-0 lg:h-125 justify-between">
+
+    <div>
+      <p class="text-[20px] md:text-[26px] font-medium">Нева</p>
+      <p class="text-[#6f6f6f] text-[14px] md:text-[18px]">
+        113,5 м² Москва
+      </p>
+    </div>
+
+    <div>
+      <p class="text-[14px] md:text-[16px]">
+        Получите реальный пример дизайн-проекта Geometrium
+      </p>
+
+      <button
+        class="btn-shine relative overflow-hidden border border-black px-4 md:px-6 py-3 md:py-4 uppercase cursor-pointer mt-4 w-full md:w-auto text-[12px] md:text-[14px]">
+        <span class="relative z-10">
+          ПОЛУЧИТЬ ПРИМЕР ДИЗАЙН-ПРОЕКТА
+        </span>
+        <span class="shine"></span>
+      </button>
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- section 5 -->
+<h2 class="font-medium text-[24px] md:text-[32px] lg:text-[40px] leading-[1.15] flex flex-col items-start w-auto lg:w-fit mx-5 lg:mx-auto mb-6">
+  <br>В Geometrium работают
+  <br>только лучшие специалисты,
+  <br>по-другому просто не может быть
+</h2>
+
+<section class="mx-5 lg:mx-20">
+  <div id="team" class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6"></div>
+  <div id="teamRow" class="grid grid-cols-2 md:grid-cols-6 gap-3 md:gap-6"></div>
 </section>
 
 
-  <!-- section 9 -->
-  <section class="b px-20 py-20">
+  <!-- section 6 -->
+<section class="px-5 lg:px-20 my-6">
 
-    <p class=" text-white text-[78px] font-light uppercase ">С 2013 года</p>
-    <h2 class="text-[50px] leading-[1.05] tracking-[-0.04em] font-medium max-w-225">
-      Наша команда разработала более 900 архитектурных
-      и дизайн-проектов
-    </h2>
+  <p class="text-[18px] md:text-[24px] lg:text-[28px] leading-[1.4] mb-6 lg:mb-10 mx-auto w-full lg:w-200">
+    У нас одна из самых крупных студий в России, которая
+    работает по всему миру
+  </p>
 
-    <div class="mt-10 flex items-start gap-6 max-w-170 lg:ml-52">
-      <span class="text-[30px] text-[#6f6f6f]">+</span>
-      <p class="text-[20px] leading-[1.6] mt-10">Многие из них получили высокую оценку жюри международных премий и
-        конкурсов</p>
-    </div>
+  <p class="text-[36px] md:text-[60px] lg:text-7xl leading-[1.1] text-white font-light">
+    БОЛЕЕ 60 ДИЗАЙНЕРОВ <br> И АРХИТЕКТОРОВ
+  </p>
 
-    <div id="awardsList" class="mt-20 lg:ml-52"></div>
-  </section>
+  <p class="text-[18px] md:text-[24px] lg:text-[28px] leading-[1.4] mb-6 lg:mb-10 mx-auto w-full lg:w-200 mt-4">
+    И других специалистов смежных областей. Они искренне увлечены своим делом,
+    готовы принять любой вызов и создать проект, который превосходит ожидания клиента
+  </p>
 
+  <a class="link-hover relative inline-block text-[16px] lg:text-[18px] mt-4 lg:ml-52 cursor-pointer">
+    Как мы отбираем лучших
+  </a>
 
+  <p class="text-[22px] md:text-[30px] lg:text-4xl leading-[1.1] font-medium my-10 lg:my-20">
+    Можете быть уверены, что ваш проект будет доведен
+    до совершенства
+  </p>
 
-  <section class="my-20 mx-20">
-    <h2 class="font-bold text-[104px]">geometrium school</h2>
+  <p class="text-[18px] md:text-[24px] lg:text-[28px] leading-[1.4] mb-6 lg:mb-10 mx-auto w-full lg:w-200">
+    Все составляющие проекта будут сделаны идеально, потому
+    что за каждый этап отвечает эксперт в своей области.
+  </p>
 
-    <p class="text-[40px] leading-[1.05] tracking-[-0.04em] font-medium max-w-225 mt-4">Мы знаем о дизайне интерьера все
-      <br>
-      и даже больше</p>
+  <p class="text-[18px] md:text-[24px] lg:text-[28px] leading-[1.4] mb-6 lg:mb-10 mx-auto w-full lg:w-200">
+    Арт-директор и ведущий дизайнер контролируют весь процесс
+    — от технического задания до реализации
+  </p>
 
-    <p class="lg:ml-40 text-[#abb8c3] my-4 text-[26px] font-light">+</p>
-
-    <p class="leading-10 text-[26px] lg:ml-44 w-120 mx-auto ">В 2018 году мы создали онлайн-школу, где все желающие
-      могут обучиться дизайну интерьера и максимально прокачать свои навыки в этом направлении</p>
-    <p class="leading-10 text-[26px] lg:ml-44 w-140 mx-auto mt-10">За 5 лет в Geometrium School обучилось более 3 500
-      человек со всего мира: от новичков до практикующих дизайнеров</p>
-
-    <button
-      class="btn-shine relative overflow-hidden border border-black w-80 lg:ml-44 h-14 uppercase cursor-pointer mt-7 text-[16px]">
-      <span class="relative z-10">
-        ПОЛУЧИТЬ ПРЕЗЕНТАЦИЮ
-      </span>
-      <span class="shine"></span>
-    </button>
-
-  </section>
+</section>
 
 
-  <section class="  mx-20 my-20">
-    <p class="text-[42px] leading-[1.4]  w-200 font-medium">Воплотим любые нестандартные технические решения в вашем проекте</p>
+  <!-- section 7 -->
+<section class="px-2 md:px-10 lg:px-20 my-6">
+  <div class="bg-[#d7d7d7] p-5 md:p-10 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 items-start">
 
-    <div id="imgSlider" class="flex gap-12 items-start">
-      <div class="w-[40%] mt-20">
+    <!-- LEFT -->
+    <div>
+      <h2 class="text-[24px] md:text-[36px] lg:text-[44px] leading-[1.05] font-medium tracking-[-0.04em] max-w-full">
+        Обсудите свой проект <br>
+        лично с арт-директором <br>
+        Geometrium
+      </h2>
 
-      <p class="text-[24px] leading-[1.4]  mb-6 font-medium"">
-        Знаем все подводные камни работы со сложными инженерными системами.
+      <p class="mt-5 text-[15px] md:text-[18px] lg:text-[20px] leading-[1.45] md:leading-8 max-w-full lg:max-w-240">
+        У которого за плечами опыт реализации более 100
+        проектов в дизайне интерьера и архитектурного проектирования
       </p>
 
-      <p class="text-[24px] leading-[1.4]  mb-6  font-medium">
-        В связке с инженерами разрабатываем грамотные чертежи и технические задания, которые отвечают всем требованиям и нормам и понятны любому строителю
+      <div class="mt-8 md:mt-12 flex items-end justify-between gap-4">
 
-      </p>
+        <div>
+          <p class="text-[12px] leading-[1.2] font-medium text-black">
+            Валерия Литвиненко
+          </p>
+          <p class="text-[11px] md:text-[12px] leading-[1.4] text-[#6f6f6f] mt-1 max-w-40">
+            Арт-директор интерьерного направления
+          </p>
+        </div>
+
+        <div class="w-28 h-28 md:w-52 md:h-52 lg:w-70 lg:h-70 rounded-full bg-[#ccfe0f] overflow-hidden flex items-end justify-center shrink-0">
+          <img src="https://geometrium.com/wp-content/uploads/2024/01/manager-6-big-ava.png"
+            class="w-full h-full object-cover">
+        </div>
+
+      </div>
     </div>
 
-    <div class="w-[60%] mt-20" id="techSliderRight"></div>
-    </div>
-  </section>
+    <!-- RIGHT -->
+    <div class="relative">
+      <div class="text-[#6f6f6f] text-[28px] md:text-[32px] font-light">
+        +
+      </div>
 
-
-
-  <section class=" px-20 my-6 overflow-hidden">
-    <div class="bg-[#d7d7d7] p-10 max-w-full flex items-start justify-between gap-10">
-
-      <div class="max-w-200  ">
-        <h2 class="text-[20px] md:text-[44px] leading-[1.05] font-medium tracking-[-0.04em] max-w-200">
-          Не нашли на нашем сайте проект,<br>
-          который вас вдохновит?
-        </h2>
-
-        <p class="mt-6 text-[18px] md:text-[20px] leading-8 max-w-240">
-          Посмотрите наши последние работы,
-          которые еще никто не видел
+      <div class="mt-4 lg:pl-10">
+        <p class="text-[18px] md:text-[22px] lg:text-[24px] leading-[1.35] max-w-full lg:max-w-100">
+          На онлайн-встрече вы расскажете о своих пожеланиях, а специалист предложит варианты реализации
         </p>
 
-        <div class="mt-10 max-w-100">
+        <div class="mt-8 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-[#ccfe0f] overflow-hidden">
+            <img src="https://geometrium.com/wp-content/uploads/2024/01/mini-manager-3.png"
+              class="w-full h-full object-cover">
+          </div>
+
+          <div class="w-10 h-10 rounded-full bg-[#ccfe0f] overflow-hidden">
+            <img src="https://geometrium.com/wp-content/uploads/2024/01/mini-manager-5.png"
+              class="w-full h-full object-cover">
+          </div>
+        </div>
+
+        <p class="mt-6 text-[15px] md:text-[18px] lg:text-[20px] leading-[1.45] max-w-full lg:max-w-100">
+          Один из наших менеджеров свяжется с вами и согласует дату и время встречи
+          с арт-директором студии
+        </p>
+
+        <form class="mt-8 md:mt-10 max-w-full lg:max-w-100">
           <div>
+            <label class="text-[12px] font-medium text-[#6f6f6f] mb-2 block">
+              как к вам обращаться?
+            </label>
+
+            <input type="text" placeholder="Иван"
+              class="w-full h-14 bg-white px-5 md:px-6 text-[18px] md:text-[22px] font-medium outline-none border border-transparent focus:border-black">
+          </div>
+
+          <div class="mt-4">
             <p class="text-[12px] font-medium text-[#6f6f6f] mb-3">
-              выберите куда прислать презентацию
+              удобный способ для связи
             </p>
 
-            <div class="flex flex-wrap gap-8 text-[12px] font-medium">
+            <div class="flex flex-wrap gap-5 md:gap-8 text-[12px] font-medium">
               <label class="flex items-center gap-2 cursor-pointer">
-                <input type="radio" name="contact" class="accent-black" checked>
+                <input type="radio" name="contact" class="accent-black">
                 <span class="link-hover relative inline-block">whatsapp</span>
               </label>
 
@@ -599,211 +513,460 @@
                 <input type="radio" name="contact" class="accent-black">
                 <span class="link-hover relative inline-block">telegram</span>
               </label>
+
+              <label class="flex items-center gap-2 cursor-pointer">
+                <input type="radio" name="contact" class="accent-black" checked>
+                <span class="link-hover relative inline-block">звонок</span>
+              </label>
             </div>
           </div>
 
           <div class="mt-4">
             <input type="tel" placeholder="Телефон"
-              class="w-full h-14 bg-white px-6 text-[22px] font-medium outline-none border border-transparent focus:border-black">
+              class="w-full h-14 bg-white px-5 md:px-6 text-[18px] md:text-[22px] font-medium outline-none border border-transparent focus:border-black">
+          </div>
+
+          <button type="submit"
+            class="btn-shine relative overflow-hidden border border-black w-full min-h-14 px-3 py-4 uppercase cursor-pointer mt-7 text-[12px] md:text-[16px]">
+            <span class="relative z-10">ОБСУДИТЬ ПРОЕКТ С АРТ-ДИРЕКТОРОМ</span>
+            <span class="shine"></span>
+          </button>
+
+          <label class="mt-5 flex items-start gap-3 text-[10px] font-medium leading-[1.45] text-[#6f6f6f] cursor-pointer">
+            <input type="checkbox" class="mt-1 shrink-0">
+            <span>
+              Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с
+              <a class="text-black underline">Политикой конфиденциальности</a>
+            </span>
+          </label>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <section class="px-5 md:px-10 lg:px-20 py-10 md:py-20">
+
+  <p class="text-white text-[36px] md:text-[58px] lg:text-[78px] font-light uppercase">
+    Услуги
+  </p>
+
+  <p class="text-[26px] md:text-[36px] lg:text-[46px] leading-[1.05] tracking-[-0.04em] font-medium max-w-250 mt-6">
+    Эстетичные и функциональные пространства,
+    где все продумано до мелочей
+  </p>
+
+  <span class="block text-[30px] text-[#6f6f6f] my-10 md:my-16 lg:ml-70 font-light">+</span>
+
+  <div class="mx-0 lg:mx-10">
+
+    <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 lg:gap-20 group cursor-pointer my-14 lg:my-20">
+
+      <div class="max-w-full lg:max-w-100 order-2 lg:order-1">
+        <h3 class="text-[24px] md:text-[30px] font-medium leading-[1.2] link-hover relative inline-block cursor-pointer">
+          Жилые интерьеры
+        </h3>
+
+        <p class="mt-4 text-[16px] md:text-[18px] w-full lg:w-94">
+          Дизайн интерьеров квартир и домов, которые соответствуют
+          потребностям, образу и стилю жизни каждого члена семьи
+        </p>
+      </div>
+
+      <div class="w-full lg:w-140 h-65 md:h-105 lg:h-90 overflow-hidden order-1 lg:order-2">
+        <img src="https://geometrium.com/wp-content/themes/Geometrium-template/img/img-sevice-1.jpg"
+          class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+      </div>
+
+    </div>
+
+    <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 lg:gap-20 group cursor-pointer my-14 lg:my-20">
+
+      <div class="w-full lg:w-140 h-65 md:h-105 lg:h-90 overflow-hidden">
+        <img src="https://geometrium.com/wp-content/themes/Geometrium-template/img/img-sevice-2.jpg"
+          class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+      </div>
+
+      <div class="max-w-full lg:max-w-100">
+        <h3 class="text-[24px] md:text-[30px] font-medium leading-[1.2] link-hover relative inline-block cursor-pointer">
+          Архитектура для девелоперов
+        </h3>
+
+        <p class="mt-4 text-[16px] md:text-[18px] w-full lg:w-94">
+          Современные проекты поселков, апарт-отелей,
+          коммерческих зданий и комплексов
+        </p>
+      </div>
+
+    </div>
+
+    <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 lg:gap-20 group cursor-pointer my-14 lg:my-20">
+
+      <div class="max-w-full lg:max-w-100 order-2 lg:order-1">
+        <h3 class="text-[24px] md:text-[30px] font-medium leading-[1.2] link-hover relative inline-block cursor-pointer">
+          Интерьер для бизнеса и девелоперов
+        </h3>
+
+        <p class="mt-4 text-[16px] md:text-[18px] w-full lg:w-94">
+          Дизайн интерьеров жилых комплексов, гостиниц,
+          офисов, ресторанов и других пространств
+        </p>
+      </div>
+
+      <div class="w-full lg:w-140 h-65 md:h-105 lg:h-90 overflow-hidden order-1 lg:order-2">
+        <img src="https://geometrium.com/wp-content/themes/Geometrium-template/img/img-sevice-3.jpg"
+          class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- section 8  -->
+
+  <section class="b px-5 lg:px-20 py-10 lg:py-20">
+
+  <p class="text-white text-[36px] md:text-[58px] lg:text-[78px] font-light uppercase">
+    С 2013 года
+  </p>
+
+  <h2 class="text-[26px] md:text-[38px] lg:text-[50px] leading-[1.1] lg:leading-[1.05] tracking-[-0.04em] font-medium max-w-full lg:max-w-225">
+    Наша команда разработала более 900 архитектурных
+    и дизайн-проектов
+  </h2>
+
+  <div class="mt-8 lg:mt-10 flex items-start gap-4 lg:gap-6 max-w-full lg:max-w-170 lg:ml-52">
+    <span class="text-[26px] lg:text-[30px] text-[#6f6f6f]">+</span>
+    <p class="text-[16px] lg:text-[20px] leading-normal lg:leading-[1.6] mt-4 lg:mt-10">
+      Многие из них получили высокую оценку жюри международных премий и
+      конкурсов
+    </p>
+  </div>
+
+  <div id="awardsList" class="mt-10 lg:mt-20 lg:ml-52"></div>
+
+</section>
+
+<section class="px-5 md:px-10 lg:px-20 py-10 md:py-20 overflow-hidden">
+
+  <p class="text-white text-[36px] md:text-[58px] lg:text-[78px] font-light uppercase">
+    С 2013 года
+  </p>
+
+  <h2 class="text-[26px] md:text-[38px] lg:text-[50px] leading-[1.1] lg:leading-[1.05] tracking-[-0.04em] font-medium max-w-full lg:max-w-225 mt-6">
+    Наша команда разработала более 900 архитектурных
+    и дизайн-проектов
+  </h2>
+
+  <div class="mt-8 md:mt-10 flex items-start gap-4 md:gap-6 max-w-full lg:max-w-170 lg:ml-52">
+    <span class="text-[24px] md:text-[30px] text-[#6f6f6f]">+</span>
+    <p class="text-[16px] md:text-[20px] leading-normal md:leading-[1.6] md:mt-10">
+      Многие из них получили высокую оценку жюри международных премий и
+      конкурсов
+    </p>
+  </div>
+
+  <div id="awardsList" class="mt-10 md:mt-20 lg:ml-52 w-full max-w-full"></div>
+</section>
+
+
+
+<section class="my-10 lg:my-20 mx-5 lg:mx-20">
+
+  <h2 class="font-bold text-[48px] md:text-[72px] lg:text-[104px] leading-[0.85]">
+    geometrium school
+  </h2>
+
+  <p class="text-[24px] md:text-[32px] lg:text-[40px] leading-[1.05] tracking-[-0.04em] font-medium max-w-full lg:max-w-225 mt-4">
+    Мы знаем о дизайне интерьера все
+    <br>
+    и даже больше
+  </p>
+
+  <p class="lg:ml-40 text-[#abb8c3] my-6 lg:my-4 text-[26px] font-light">+</p>
+
+  <p class="leading-[1.45] lg:leading-10 text-[18px] md:text-[22px] lg:text-[26px] lg:ml-44 w-full lg:w-120 mx-auto">
+    В 2018 году мы создали онлайн-школу, где все желающие
+    могут обучиться дизайну интерьера и максимально прокачать свои навыки в этом направлении
+  </p>
+
+  <p class="leading-[1.45] lg:leading-10 text-[18px] md:text-[22px] lg:text-[26px] lg:ml-44 w-full lg:w-140 mx-auto mt-6 lg:mt-10">
+    За 5 лет в Geometrium School обучилось более 3 500
+    человек со всего мира: от новичков до практикующих дизайнеров
+  </p>
+
+  <button
+    class="btn-shine relative overflow-hidden border border-black w-full md:w-80 lg:ml-44 h-14 uppercase cursor-pointer mt-7 text-[13px] lg:text-[16px]">
+    <span class="relative z-10">
+      ПОЛУЧИТЬ ПРЕЗЕНТАЦИЮ
+    </span>
+    <span class="shine"></span>
+  </button>
+
+</section>
+
+
+<section class="mx-5 lg:mx-20 my-10 lg:my-20">
+  <p class="text-[26px] md:text-[34px] lg:text-[42px] leading-[1.15] lg:leading-[1.4] w-full lg:w-200 font-medium">
+    Воплотим любые нестандартные технические решения в вашем проекте
+  </p>
+
+  <div id="imgSlider" class="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
+    <div class="w-full lg:w-[40%] mt-8 lg:mt-20">
+
+      <p class="text-[18px] md:text-[22px] lg:text-[24px] leading-[1.4] mb-6 font-medium">
+        Знаем все подводные камни работы со сложными инженерными системами.
+      </p>
+
+      <p class="text-[18px] md:text-[22px] lg:text-[24px] leading-[1.4] mb-6 font-medium">
+        В связке с инженерами разрабатываем грамотные чертежи и технические задания, которые отвечают всем требованиям и нормам и понятны любому строителю
+      </p>
+    </div>
+
+    <div class="w-full lg:w-[60%] mt-4 lg:mt-20" id="techSliderRight"></div>
+  </div>
+</section>
+
+
+<section class="px-2 lg:px-20 my-6 overflow-hidden">
+  <div class="bg-[#d7d7d7] p-5 lg:p-10 max-w-full flex flex-col lg:flex-row items-start justify-between gap-8 lg:gap-10">
+
+    <div class="max-w-full lg:max-w-200">
+      <h2 class="text-[20px] md:text-[32px] lg:text-[44px] leading-[1.05] font-medium tracking-[-0.04em] max-w-full lg:max-w-200">
+        Не нашли на нашем сайте проект,<br>
+        который вас вдохновит?
+      </h2>
+
+      <p class="mt-6 text-[16px] md:text-[18px] lg:text-[20px] leading-[1.45] lg:leading-8 max-w-full lg:max-w-240">
+        Посмотрите наши последние работы,
+        которые еще никто не видел
+      </p>
+
+      <div class="mt-10 max-w-full lg:max-w-100">
+        <div>
+          <p class="text-[12px] font-medium text-[#6f6f6f] mb-3">
+            выберите куда прислать презентацию
+          </p>
+
+          <div class="flex flex-wrap gap-8 text-[12px] font-medium">
+            <label class="flex items-center gap-2 cursor-pointer">
+              <input type="radio" name="contact" class="accent-black" checked>
+              <span class="link-hover relative inline-block">whatsapp</span>
+            </label>
+
+            <label class="flex items-center gap-2 cursor-pointer">
+              <input type="radio" name="contact" class="accent-black">
+              <span class="link-hover relative inline-block">telegram</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <input type="tel" placeholder="Телефон"
+            class="w-full h-14 bg-white px-5 lg:px-6 text-[18px] lg:text-[22px] font-medium outline-none border border-transparent focus:border-black">
+        </div>
+
+        <div class="mt-4">
+          <input type="text" placeholder="@nickname"
+            class="w-full h-14 bg-white px-5 lg:px-6 text-[18px] lg:text-[22px] font-medium outline-none border border-transparent focus:border-black">
+        </div>
+
+        <button
+          class="btn-shine relative overflow-hidden border border-black w-full h-14 uppercase cursor-pointer mt-7 text-[12px] lg:text-[16px]">
+          <span class="relative z-10">
+            ПОЛУЧИТЬ ПРЕЗЕНТАЦИЮ
+          </span>
+          <span class="shine"></span>
+        </button>
+
+        <label
+          class="mt-5 flex items-start gap-3 text-[10px] font-medium leading-[1.45] text-[#6f6f6f] cursor-pointer">
+          <input type="checkbox" class="mt-1 shrink-0">
+          <span>
+            Нажимая на кнопку, вы даете согласие на обработку своих персональных данных
+            и соглашаетесь с
+            <a class="text-black underline">Политикой конфиденциальности</a>
+          </span>
+        </label>
+      </div>
+    </div>
+
+    <div class="shrink-0 w-full lg:w-auto">
+      <img src="https://geometrium.com/wp-content/uploads/2024/01/sc5-bg-move.png"
+        class="w-full lg:w-174 h-auto object-contain pointer-events-none">
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- section 10 -->
+<section class="mx-5 lg:mx-20 my-10 lg:my-20">
+  <p class="text-white text-[32px] md:text-[50px] lg:text-[70px] font-light uppercase">
+    ОТЗЫВЫ
+  </p>
+
+  <div id="reviewSlider" class="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start"></div>
+</section>
+
+
+  <section class="my-10 lg:my-20 mx-5 lg:mx-20">
+
+  <p class="text-[24px] md:text-[32px] lg:text-[38px] leading-[1.3] lg:leading-[1.4] mx-auto w-full lg:w-200 font-medium">
+    Создаем архитектурные и дизайн-проекты по всему миру
+  </p>
+
+  <p class="lg:ml-62 text-[#abb8c3] my-6 lg:my-4 text-[26px] lg:text-[30px] font-light">
+    +
+  </p>
+
+  <p class="text-[18px] md:text-[22px] lg:text-[24px] leading-[1.4] mb-6 mx-auto w-full lg:w-200 font-medium">
+    Учитываем особенности климата, ландшафта и культуры страны
+  </p>
+
+  <img 
+    src="https://geometrium.com/wp-content/themes/Geometrium-template/img/russian_cart.svg" 
+    alt="map"
+    class="py-6 lg:py-10 w-full h-auto object-contain"
+  >
+
+</section>
+
+
+<section class="px-2 lg:px-20 my-6">
+  <div class="bg-[#d7d7d7] p-5 lg:p-10 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+
+    <div>
+      <h2 class="text-[24px] md:text-[34px] lg:text-[44px] leading-[1.05] font-medium tracking-[-0.04em] max-w-full lg:max-w-200">
+        Организуем для вас встречу <br>
+        с экспертом студии Geometrium
+      </h2>
+
+      <p class="text-[22px] md:text-[34px] lg:text-[44px] font-medium text-[#6f6f6f] mt-4">
+        ВЖИВУЮ ИЛИ ОНЛАЙН
+      </p>
+
+      <div class="mt-6 lg:mt-10 flex items-start gap-3 lg:gap-4">
+        <span class="text-[26px] lg:text-[30px] text-[#6f6f6f]">+</span>
+
+        <div>
+          <p class="text-[16px] md:text-[18px] lg:text-[20px] font-medium mb-6">
+            На встрече эксперт
+          </p>
+
+          <ul class="space-y-4 text-[14px] lg:text-[16px] text-black max-w-full lg:max-w-160">
+            <li>— Расскажет как мы работаем и чем можем вам помочь</li>
+            <li>— Сориентирует по срокам стройки и бюджету на реализацию вашего проекта</li>
+            <li>— Поделится нашим опытом ведения проектов</li>
+            <li>— Обсудит с вами дальнейшие действия</li>
+          </ul>
+
+          <p class="text-[12px] lg:text-[10px] text-[#6f6f6f] mt-6 max-w-full lg:max-w-140">
+            В зависимости от сложности проекта к встрече могут подключиться руководитель проекта,
+            дизайнер и комплектатор
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative">
+
+      <div class="flex gap-8 lg:gap-10 mb-6">
+        <div class="text-left lg:text-center">
+          <div class="w-16 h-16 lg:w-20 lg:h-20 rounded-full bg-[#ccfe0f] overflow-hidden">
+            <img src="https://geometrium.com/wp-content/uploads/2024/01/mini-manager-3.png"
+              class="w-full h-full object-cover">
+          </div>
+          <p class="text-[12px] mt-2">Виктория Булатникова</p>
+          <p class="text-[10px] text-[#6f6f6f]">Эксперт студии Geometrium</p>
+        </div>
+
+        <div class="text-left lg:text-center">
+          <div class="w-16 h-16 lg:w-20 lg:h-20 rounded-full bg-[#ccfe0f] overflow-hidden">
+            <img src="https://geometrium.com/wp-content/uploads/2024/01/mini-manager-5.png"
+              class="w-full h-full object-cover">
+          </div>
+          <p class="text-[12px] mt-2">Дарья Проц</p>
+          <p class="text-[10px] text-[#6f6f6f]">Эксперт студии Geometrium</p>
+        </div>
+      </div>
+
+      <div class="absolute left-0 top-0 text-[#6f6f6f] text-[32px] font-light hidden lg:block">+</div>
+
+      <div class="lg:pl-10 mt-5">
+        <form class="mt-8 lg:mt-10 max-w-full lg:max-w-100">
+
+          <div>
+            <label class="block text-[12px] font-medium text-[#6f6f6f] mb-2">
+              как к вам обращаться?
+            </label>
+            <input type="text" placeholder="Иван"
+              class="w-full h-14 bg-white px-5 lg:px-6 text-[18px] lg:text-[22px] font-medium outline-none border border-transparent focus:border-black">
           </div>
 
           <div class="mt-4">
-            <input type="text" placeholder="@nickname"
-              class="w-full h-14 bg-white px-6 text-[22px] font-medium outline-none border border-transparent focus:border-black">
+            <p class="text-[12px] font-medium text-[#6f6f6f] mb-3">
+              удобный способ для связи
+            </p>
+
+            <div class="flex flex-wrap gap-5 lg:gap-8 text-[12px] font-medium">
+              <label class="flex items-center gap-2 cursor-pointer">
+                <input type="radio" name="contact" class="accent-black">
+                <span class="link-hover relative inline-block">whatsapp</span>
+              </label>
+
+              <label class="flex items-center gap-2 cursor-pointer">
+                <input type="radio" name="contact" class="accent-black">
+                <span class="link-hover relative inline-block">telegram</span>
+              </label>
+
+              <label class="flex items-center gap-2 cursor-pointer">
+                <input type="radio" name="contact" class="accent-black" checked>
+                <span class="link-hover relative inline-block">звонок</span>
+              </label>
+            </div>
           </div>
 
-          <button
-            class="btn-shine relative overflow-hidden border border-black w-full h-14 uppercase cursor-pointer mt-7 text-[16px]">
+          <div class="mt-4">
+            <input type="tel" placeholder="Телефон"
+              class="w-full h-14 bg-white px-5 lg:px-6 text-[18px] lg:text-[22px] font-medium outline-none border border-transparent focus:border-black">
+          </div>
+
+          <button type="submit"
+            class="btn-shine relative overflow-hidden border border-black w-full h-14 uppercase cursor-pointer mt-7 text-[12px] lg:text-[16px]">
             <span class="relative z-10">
-              ПОЛУЧИТЬ ПРЕЗЕНТАЦИЮ
+              ОБСУДИТЬ ПРОЕКТ С АРТ-ДИРЕКТОРОМ
             </span>
             <span class="shine"></span>
           </button>
 
-          <label
-            class="mt-5 flex items-start gap-3 text-[10px] font-medium leading-[1.45] text-[#6f6f6f] cursor-pointer">
-            <input type="checkbox" class="mt-1">
+          <label class="mt-5 flex items-start gap-3 text-[10px] font-medium leading-[1.45] text-[#6f6f6f] cursor-pointer">
+            <input type="checkbox" class="mt-1 shrink-0">
             <span>
               Нажимая на кнопку, вы даете согласие на обработку своих персональных данных
               и соглашаетесь с
               <a class="text-black underline">Политикой конфиденциальности</a>
             </span>
           </label>
-        </div>
-      </div>
 
-      <div class="shrink-0">
-        <img src="https://geometrium.com/wp-content/uploads/2024/01/sc5-bg-move.png"
-          class="w-174 h-auto object-contain pointer-events-none">
+        </form>
       </div>
-
     </div>
-  </section>
 
+  </div>
+</section>
 
-  <!-- section 10 -->
-  <section class="  mx-20 my-20">
-    <p class="text-white text-[70px] font-light uppercase">ОТЗЫВЫ</p>
+  <section class="px-3 lg:px-20 py-10 lg:py-20">
 
-    <div id="reviewSlider" class="flex gap-12 items-start"></div>
-  </section>
-
-
-  <section class=" my-20 mx-20">
-    <p class="text-[38px] leading-[1.4]   mx-auto w-200 font-medium">Создаем архитектурные и дизайн-проекты по всему
-      миру</p>
-    <p class="lg:ml-62 text-[#abb8c3] my-4 text-[30px] font-light">+</p>
-    <p class="text-[24px] leading-[1.4]  mb-6 mx-auto w-200 font-medium">Учитываем особенности климата, ландшафта и
-      культуры страны</p>
-
-    <img src="https://geometrium.com/wp-content/themes/Geometrium-template/img/russian_cart.svg" alt="map"
-      class="py-10">
-
-
-  </section>
-
-
-
-
-  <section class="px-20 my-6">
-    <div class="bg-[#d7d7d7] p-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-
-      <div>
-
-        <h2 class="text-[20px] md:text-[44px] leading-[1.05] font-medium tracking-[-0.04em] max-w-200">
-          Организуем для вас встречу <br>
-          с экспертом студии Geometrium
-        </h2>
-
-        <p class="text-[20px] md:text-[44px] font-medium text-[#6f6f6f] mt-4">
-          ВЖИВУЮ ИЛИ ОНЛАЙН
-        </p>
-
-        <div class="mt-10 flex items-start gap-4">
-          <span class="text-[30px] text-[#6f6f6f]">+</span>
-
-          <div>
-            <p class="text-[16px] md:text-[20px] font-medium mb-6">
-              На встрече эксперт
-            </p>
-
-            <ul class="space-y-4 text-[14px] md:text-[16px] text-black max-w-160">
-              <li>— Расскажет как мы работаем и чем можем вам помочь</li>
-              <li>— Сориентирует по срокам стройки и бюджету на реализацию вашего проекта</li>
-              <li>— Поделится нашим опытом ведения проектов</li>
-              <li>— Обсудит с вами дальнейшие действия</li>
-            </ul>
-
-            <p class="text-[10px] text-[#6f6f6f] mt-6 max-w-140">
-              В зависимости от сложности проекта к встрече могут подключиться руководитель проекта,
-              дизайнер и комплектатор
-            </p>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- SAĞ -->
-      <div class="relative">
-
-        <!-- avatarlar -->
-        <div class="flex gap-10 mb-6">
-          <div class="text-center">
-            <div class="w-20 h-20 rounded-full bg-[#ccfe0f] overflow-hidden mx-auto">
-              <img src="https://geometrium.com/wp-content/uploads/2024/01/mini-manager-3.png"
-                class="w-full h-full object-cover">
-            </div>
-            <p class="text-[12px] mt-2">Виктория Булатникова</p>
-            <p class="text-[10px] text-[#6f6f6f]">Эксперт студии Geometrium</p>
-          </div>
-
-          <div class="text-center">
-            <div class="w-20 h-20 rounded-full bg-[#ccfe0f] overflow-hidden mx-auto">
-              <img src="https://geometrium.com/wp-content/uploads/2024/01/mini-manager-5.png"
-                class="w-full h-full object-cover">
-            </div>
-            <p class="text-[12px] mt-2">Дарья Проц</p>
-            <p class="text-[10px] text-[#6f6f6f]">Эксперт студии Geometrium</p>
-          </div>
-        </div>
-
-        <div class="absolute left-0 top-0 text-[#6f6f6f] text-[32px] font-light">+</div>
-
-        <div class="lg:pl-10 mt-5">
-
-          <!-- form -->
-          <form class="mt-10 max-w-100">
-
-            <div>
-              <label class="text-[12px] font-medium text-[#6f6f6f] mb-2">
-                как к вам обращаться?
-              </label>
-              <input type="text" placeholder="Иван"
-                class="w-full h-14 bg-white px-6 text-[22px] font-medium outline-none border border-transparent focus:border-black">
-            </div>
-
-            <div class="mt-4">
-              <p class="text-[12px] font-medium text-[#6f6f6f] mb-3">
-                удобный способ для связи
-              </p>
-
-              <div class="flex gap-8 text-[12px] font-medium">
-                <label class="flex items-center gap-2 cursor-pointer">
-                  <input type="radio" name="contact" class="accent-black">
-                  <span class="link-hover relative inline-block">whatsapp</span>
-                </label>
-
-                <label class="flex items-center gap-2 cursor-pointer">
-                  <input type="radio" name="contact" class="accent-black">
-                  <span class="link-hover relative inline-block">telegram</span>
-                </label>
-
-                <label class="flex items-center gap-2 cursor-pointer">
-                  <input type="radio" name="contact" class="accent-black" checked>
-                  <span class="link-hover relative inline-block">звонок</span>
-                </label>
-              </div>
-            </div>
-
-            <div class="mt-4">
-              <input type="tel" placeholder="Телефон"
-                class="w-full h-14 bg-white px-6 text-[22px] font-medium outline-none border border-transparent focus:border-black">
-            </div>
-
-            <button type="submit"
-              class="btn-shine relative overflow-hidden border border-black w-full h-14 uppercase cursor-pointer mt-7 text-[16px]">
-              <span class="relative z-10">
-                ОБСУДИТЬ ПРОЕКТ С АРТ-ДИРЕКТОРОМ
-              </span>
-              <span class="shine"></span>
-            </button>
-
-            <label
-              class="mt-5 flex items-start gap-3 text-[10px] font-medium leading-[1.45] text-[#6f6f6f] cursor-pointer">
-              <input type="checkbox" class="mt-1">
-              <span>
-                Нажимая на кнопку, вы даете согласие на обработку своих персональных данных
-                и соглашаетесь с
-                <a class="text-black underline">Политикой конфиденциальности</a>
-              </span>
-            </label>
-
-          </form>
-
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-
-  <section class=" px-20 py-20">
-
-    <p class="text-white text-[78px] font-light uppercase mx-auto w-200">
+    <p class="text-white text-[34px] md:text-[56px] lg:text-[78px] w-full lg:w-200 font-light uppercase mx-auto ">
       БЛОГ
     </p>
 
-    <p class="text-[42px] mx-auto w-200 font-medium">
+    <p class="ttext-[24px] md:text-[34px] lg:text-[42px] w-full lg:w-200 mx-auto  font-medium">
       В создании идеального пространства
       нет секретов. Только опыт.
       Мы делимся им с вами в этом блоге
@@ -816,7 +979,7 @@
         <div class="relative overflow-hidden">
 
           <img src="https://geometrium.com/wp-content/uploads/2026/03/image3-4.png"
-            class="w-full h-65 object-cover transition duration-500 group-hover:scale-105 cursor-pointer">
+            class="w-full h-45 md:h-65 object-cover transition duration-500 group-hover:scale-105 cursor-pointer">
 
           <div
             class="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition duration-300 cursor-pointer">
@@ -831,8 +994,8 @@
 
         </div>
 
-        <h3 class="mt-4 text-[22px] font-medium">Что такое графический дизайн</h3>
-        <p class="text-gray-400">23 марта 2026 Статьи о дизайне интерьера</p>
+        <h3 class="mt-4 text-[16px] lg:text-[22px] font-medium">Что такое графический дизайн</h3>
+        <p class="text-gray-400 text-[12px] lg:text-base">23 марта 2026 Статьи о дизайне интерьера</p>
 
       </div>
 
@@ -892,67 +1055,75 @@
     </div>
 
     <div class="mt-12">
-      <a class="link-hover relative inline-block text-[18px] font-medium">Читать еще больше статей</a>
+      <a class="link-hover relative inline-block text-[16px] lg:text-[18px] font-medium">Читать еще больше статей</a>
     </div>
 
   </section>
 
 
 
-  <section class=" my-20 ">
-    <p class="text-[38px] leading-[1.4]   mx-auto w-200 font-medium">СИли приезжайте к нам в гости</p>
-    <p class="lg:ml-62 text-[#abb8c3] my-4 text-[30px] font-light">+</p>
-    <p class="text-[24px] leading-[1.4]  mb-6 mx-auto w-200 font-medium">Познакомим с нашей командой, проконсультируем по всем вопросам, предварительно рассчитаем ваш проект и угостим вкусным кофе</p>
+<section class="my-10 lg:my-20">
 
-    <div class="relative w-full h-screen overflow-hidden">
-      <img
-        src="https://geometrium.com/wp-content/uploads/2024/02/film_geometrium.jpg"
-        class="h-full max-w-none animate-pan-x"
-      >
-    </div>
-      <div class="relative">
-        <p class="absolute -bottom-10 right-10 text-[#ccfe0f] font-bold text-[160px]">
-          geometrium
-        </p>
-      </div>
+  <p class="text-[26px] md:text-[32px] lg:text-[38px] leading-tight lg:leading-[1.4] mx-5 lg:mx-auto w-auto lg:w-200 font-medium">
+    Или приезжайте к нам в гости
+  </p>
+
+  <p class="lg:ml-62 text-[#abb8c3] my-4 text-[30px] font-light">
+    +
+  </p>
+
+  <p class="text-[18px] md:text-[22px] lg:text-[24px] leading-[1.4] mb-6 mx-5 lg:mx-auto w-auto lg:w-200 font-medium">
+    Познакомим с нашей командой, проконсультируем по всем вопросам, предварительно рассчитаем ваш проект и угостим вкусным кофе
+  </p>
+
+  <div class="relative w-full h-65 md:h-125 lg:h-screen overflow-hidden">
+    <img
+      src="https://geometrium.com/wp-content/uploads/2024/02/film_geometrium.jpg"
+      class="h-full max-w-none animate-pan-x"
+    >
+  </div>
+
+  <div class="relative">
+    <p class="absolute -bottom-3 lg:-bottom-10 left-5 lg:left-auto lg:right-10 text-[#ccfe0f] font-bold text-[54px] md:text-[90px] lg:text-[160px] leading-[0.8]">
+      geometrium
+    </p>
+  </div>
+
+  <div class="mt-16 lg:mt-20">
+    <p class="text-[22px] md:text-[26px] lg:text-[30px] leading-tight lg:leading-[1.4] mb-6 mx-5 lg:mx-auto w-auto lg:w-200 font-medium">
+      Наша студия находится в первом креативном пространстве Москвы — Центре дизайна ARTPLAY
+    </p>
+  </div>
+
+  <div class="flex flex-col lg:flex-row gap-6 lg:gap-10 justify-between items-start lg:items-center mt-10 lg:mt-16 mx-5 lg:mx-auto w-auto lg:w-200 font-medium">
+    
+    <p class="text-[16px] md:text-[18px] lg:text-[20px] leading-normal lg:leading-[1.6] text-black max-w-full lg:max-w-150">
+      ул. Нижняя Сыромятническая, д. 10, корп. 8,<br>
+      эт. 2, офис 302 <span class="text-gray-400">(напротив Poliform)</span>
+    </p>
+
+    <p class="text-[16px] lg:text-[20px] border-b-2 border-black link-hover relative inline-block cursor-pointer">
+      Посмотреть план ARTPLAY
+    </p>
+
+  </div>
+
+</section>
 
 
-      <div class="mt-20">
-        <p class="text-[30px]  leading-[1.4]  mb-6 mx-auto w-200 font-medium">
-        Наша студия находится в первом креативном пространстве Москвы — Центре дизайна ARTPLAY
-      </p>
-      </div>
 
-      <div class="flex justify-between items-center mt-16 mx-auto w-200 font-medium">
-        
-        <p class="text-[20px] leading-[1.6] text-black max-w-150">
-          ул. Нижняя Сыромятническая, д. 10, корп. 8,<br>
-          эт. 2, офис 302 <span class="text-gray-400">(напротив Poliform)</span>
-        </p>
-
-        <p class="text-[20px] border-b-2 border-black link-hover relative inline-block cursor-pointer ">
-          Посмотреть план ARTPLAY
-        </p>
-
-      </div>
-
-
-  </section>
-
-
-
-  <footer class="bg-[#d7d7d7] px-20 ">
-    <div class="flex py-20">
+  <footer class="bg-[#d7d7d7] px-5 lg:px-20">
+    <div class="flex flex-col lg:flex-row py-20">
       <h2 class="text-[32px] font-bold leading-[1.1]">
         geometrium <br> studio
       </h2>
 
-      <p class="text-[12px] text-[#6f6f6f] mt-4 uppercase ml-34">
+      <p class="text-[12px] text-[#6f6f6f] mt-4 uppercase lg:ml-34">
         design & architecture
       </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
 
 
 
@@ -1042,12 +1213,12 @@
     </div>
 
 
-    <div class="flex justify-between mt-30 pb-10">
+    <div class="flex justify-between mt-14 lg:mt-30 pb-10">
       <p>Политика конфиденциальности</p>
       <div class="flex items-center gap-2  px-3 py-1.5 rounded-full w-fit group cursor-pointer">
         <p class="text-sm text-[#6f6f6f] font-medium">made by</p>
         
-        <div class="flex items-center gap-1.5  bg-[#c1c1c1] group-hover:bg-[#CCFE0F] px-2 rounded-full transition-all duration-200 mr-40">
+        <div class="flex items-center gap-1.5  bg-[#c1c1c1] group-hover:bg-[#CCFE0F] px-2 rounded-full transition-all duration-200 lg:mr-40">
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
             <mask id="mask0_3730_34861" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="14" height="14">
               <circle cx="7" cy="7" r="7" fill="url(#paint0_linear_3730_34861)"></circle>
@@ -1072,6 +1243,7 @@
 
   </footer>
 
+  
 
   <script src="script.js"></script>
 </body>

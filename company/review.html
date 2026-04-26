@@ -4,189 +4,235 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="../assets/css/output.css">
     <link href="https://fonts.googleapis.com/css2?family=TT+Commons:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="icon"  href="./favicon.png">
 
 </head>
 <body class="bg-[#ddd]">
-    <header class="fixed top-0 left-0 w-full z-50  px-20 flex justify-between bg-[#ddd]">
-        <div class=" h-full  pt-3 ">
-            <a href="../index.html" class="logo-hover cursor-pointer font-bold text-[38px] leading-[4.2rem] tracking-[-0.098rem] text-black">
-            geometrium studio
-            </a>
+    <header class="fixed top-0 left-0 w-full z-50 bg-[#ddd] px-5 lg:px-20 flex justify-between items-start">
+
+      <div class="h-full pt-3">
+        <a href="../index.html" class="logo-hover cursor-pointer font-bold text-[24px] lg:text-[38px] leading-12 lg:leading-[4.2rem] tracking-[-0.098rem] text-black">
+          geometrium studio
+        </a>
+      </div>
+
+      <div class="hidden lg:block h-full px-16 pt-9">
+        <nav class="flex justify-center">
+          <ul class="flex items-center gap-8 text-[18px] font-medium text-black mr-4">
+            <li class="link-hover relative inline-block cursor-pointer">услуги</li>
+            <li class="link-hover relative inline-block cursor-pointer">
+              <a href="../portfolio.html">портфолио</a>
+            </li>
+            <li class="link-hover relative inline-block cursor-pointer">
+              <a href="company/company.html">о компании</a>
+            </li>
+            <li class="link-hover relative inline-block cursor-pointer">school</li>
+            <li class="link-hover relative inline-block cursor-pointer">
+              <a href="../contact.html">контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="mt-4 flex items-center justify-center gap-5">
+          <img src="../assets/img/messenger.png" class="w-6 h-6 object-contain" alt="messenger">
+          <img src="../assets/img/telegram.png" class="w-6 h-6 object-contain" alt="telegram">
+
+          <p class="ml-2 text-[18px] font-medium underline text-black hover:text-[#ccfe0f] cursor-pointer">
+            +7 (499) 444-68-16
+          </p>
+
+          <p class="text-[18px] font-semibold link-hover relative inline-block cursor-pointer">заказать звонок</p>
         </div>
+      </div>
 
-       <div class=" h-full px-16 pt-9 ">
-          <nav class="flex justify-center">
-            <ul class="flex items-center gap-8 text-[18px] font-medium text-black mr-4">
-              <li class="link-hover relative inline-block cursor-pointer">услуги</li>
-              <li class="link-hover relative inline-block cursor-pointer">
-                <a href="../portfolio.html">портфолио</a>
-              </li>
-              <li class="link-hover relative inline-block cursor-pointer">
-                <a href="company.html">о компании</a>
-              </li>
-              <li class="link-hover relative inline-block cursor-pointer">school</li>
-              <li class="link-hover relative inline-block cursor-pointer">
-                <a href="../contact.html">контакты</a>
-              </li>            
-            </ul>
+      <button onclick="openMobileMenu()" class="block lg:hidden pt-7 text-[24px]">
+        <i class="fa-solid fa-bars" style="color: rgb(0, 0, 0);"></i>
+      </button>
 
-            <div class="ml-4 mt-1">
-              <div class="relative  transition-transform duration-1000 ease-in-out"
-                style="transform-style: preserve-3d;" onmouseenter="this.style.transform='rotateX(180deg)'"
-                onmouseleave="this.style.transform='rotateX(0deg)'">
-
-                <div class="absolute inset-0  text-[14px] font-normal cursor-pointer"
-                  style="backface-visibility: hidden;">
-                  ru
-                </div>
-
-                <div class="absolute inset-0 text-[14px] font-normal cursor-pointer"
-                  style="backface-visibility: hidden; transform: rotateX(180deg);">
-                  en
-                </div>
-
-              </div>
-            </div>
-          </nav>
-
-          <div class="mt-4 flex items-center justify-center gap-5">
-            <img src="../img/messenger.png" class="w-6 h-6 object-contain" alt="messenger">
-            <img src="../img/telegram.png" class="w-6 h-6 object-contain" alt="telegram">
-
-            <p class=" ml-2 text-[18px] font-medium underline text-black hover:text-[#ccfe0f] cursor-pointer">
-              +7 (499) 444-68-16
-            </p>
-
-            <p class="text-[18px] font-semibold link-hover relative inline-block cursor-pointer">заказать звонок</p>
-          </div>
-
-          
-        </div>
     </header>
 
-    <section class="  mx-20 my-20">
-        <p class="text-white text-[70px] font-light uppercase">ОТЗЫВЫ</p>
+    <div id="mobileMenu" class="fixed inset-0 bg-[#ccfe0f] z-99999 hidden px-5 pt-3 text-black">
 
-        <div id="reviewSlider" class="flex gap-12 items-start"></div>
-    </section>
+      <div class="flex justify-between items-start">
+        <h3 class="text-[22px] font-black tracking-[-0.04em]">geometrium</h3>
+
+        <button onclick="closeMobileMenu()" class="text-[34px] leading-none">
+          ×
+        </button>
+      </div>
+
+      <div class="mt-8 flex items-start justify-between">
+        <div class="text-[10px] leading-[1.2] ml-2">
+          <p>ru</p>
+          <p>en</p>
+        </div>
+
+        <p class="text-[24px] font-black mr-28">studio</p>
+      </div>
+
+      <nav class="mt-8">
+        <ul class="space-y-5 text-[25px] font-medium">
+          <li><a href="portfolio.html">портфолио</a></li>
+          <li><a href="company/company.html">о компании</a></li>
+          <li><a href="#">school</a></li>
+          <li><a href="contact.html">контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="mt-8">
+        <p class="text-[20px] leading-none ml-4">•</p>
+
+        <div class="flex gap-10 text-[12px] font-medium">
+          <span>москва</span>
+          <span>бали</span>
+          <span>гонконг</span>
+        </div>
+
+        <p class="mt-4 text-[18px] font-medium underline">
+          + 7 495 141-20-9
+        </p>
+      </div>
+
+      <div class="mt-10 flex gap-8 text-[18px] font-medium">
+        <p>telegram</p>
+        <p>whatsapp</p>
+      </div>
+
+      <p class="mt-7 text-[18px] font-medium">заказать звонок</p>
+    </div>
+<section class="my-10 md:my-20  px-5 md:px-10 lg:px-20 py-10 md:py-16 mt-24 lg:mt-32">
+  <p class="text-white text-[32px] md:text-[50px] lg:text-[70px] font-light uppercase">
+    ОТЗЫВЫ
+  </p>
+
+  <div id="reviewSlider" class="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start"></div>
+</section>
 
 
-  <section class=" my-20 mx-20">
-    <p class="text-[38px] leading-[1.4]   mx-auto w-200 font-medium">Создаем архитектурные и дизайн-проекты по всему
-      миру</p>
-    <p class="lg:ml-62 text-[#abb8c3] my-4 text-[30px] font-light">+</p>
-    <p class="text-[24px] leading-[1.4]  mb-6 mx-auto w-200 font-medium">Учитываем особенности климата, ландшафта и
-      культуры страны</p>
+  <section class="my-10 lg:my-20 mx-5 lg:mx-20">
 
-    <img src="https://geometrium.com/wp-content/themes/Geometrium-template/img/russian_cart.svg" alt="map"
-      class="py-10">
+  <p class="text-[24px] md:text-[32px] lg:text-[38px] leading-[1.3] lg:leading-[1.4] mx-auto w-full lg:w-200 font-medium">
+    Создаем архитектурные и дизайн-проекты по всему миру
+  </p>
 
-  </section>
+  <p class="lg:ml-62 text-[#abb8c3] my-6 lg:my-4 text-[26px] lg:text-[30px] font-light">
+    +
+  </p>
 
+  <p class="text-[18px] md:text-[22px] lg:text-[24px] leading-[1.4] mb-6 mx-auto w-full lg:w-200 font-medium">
+    Учитываем особенности климата, ландшафта и культуры страны
+  </p>
+
+  <img 
+    src="https://geometrium.com/wp-content/themes/Geometrium-template/img/russian_cart.svg" 
+    alt="map"
+    class="py-6 lg:py-10 w-full h-auto object-contain"
+  >
+
+</section>
 
   <script>
-    const reviews = [
-  {
-    id: 1,
-    title: "Реализовали все, что хотели",
-    text: "Когда мы обратились в студию, хотели получить современный функциональный интерьер, в котором была бы продумана вся эргономика. Хотели также хорошую кухню, потому что мы оба любим готовить. Чтобы кухня закрывалась и открывалась, убирая лишний шум. Хотели общую зону, чтобы собираться с друзьями. Одновременно можно было и готовить, и общаться всем вместе. Вот это всё реализовано в нашей квартире. Мы очень довольны конечным продуктом.",
-    subtitle: "Илья и Елена",
-    info: "ЖК Серебряный парк 82 м²",
-    img: "https://geometrium.com/wp-content/uploads/2024/04/dizayn-interera-zakazat-v-moskve.jpg"
-  },
-  {
-    id: 2,
-    title: "Всегда на связи",
-    text: "Всем остались довольны. Сделали проект нашей квартиры с архитектурным бюро GEOMETRIUM. Работой команды дизайнеров остались очень довольны. Всегда на связи, всегда готовы выслушать и внести свои коррективы. В результате нашей совместной работы мы получили очень интересный проект.",
-    subtitle: "Лилия",
-    info: "Москва, 113 м²",
-    img: "https://geometrium.com/wp-content/uploads/2025/04/20_HW_3-post-_1_.webp"
-  },
-  {
-    id: 3,
-    title: "Тендер для выбора студии",
-    text: "Для своей квартиры мы сделали целый тендер, чтобы выбрать студию дизайна. Анализировали качество, подход, стоимость и стиль. В результате компания Geometrium выиграла тендер. Мы очень много времени уделили именно проектированию, чтобы всё было продумано и понятно.",
-    subtitle: "Алексей и Дарья",
-    info: "ЖК Династия 73 м²",
-    img: "https://geometrium.com/wp-content/uploads/2024/04/3R5A6379-1.jpg"
-  },
-  {
-    id: 4,
-    title: "Сделали кухню-гостинную на 11 м² больше!",
-    text: "Хочется сказать спасибо дизайнеру Эльвире и в целом команде Geometrium, что им удалось в наши 85 кв.м уместить всё, что нам хотелось. В результате всё получилось. Общая зона достаточно большая, и получилось очень удобно для жизни.",
-    subtitle: "ЖК Небо",
-    info: "95 м²",
-    img: "https://geometrium.com/wp-content/uploads/2024/04/3R5A3229-1-1.png"
-  },
-  {
-    id: 5,
-    title: "В процессе реализации",
-    text: "Очень рады, что выбрали вас в качестве дизайнеров для нашей квартиры. У нас был основной вопрос по залу с кухней, так как площадь была совсем небольшая, и мы не понимали, как лучше всё организовать.",
-    subtitle: "Павел и Анна",
-    info: "Москва 90 м²",
-    img: "https://geometrium.com/wp-content/uploads/2025/04/5-_3_.webp"
-  },
-  {
-    id: 6,
-    title: "100 баллов",
-    text: "Готова поставить студии просто 100 баллов. Отработали весь проект от начала и завершения авторского надзора на высшем уровне. Я осталась очень довольна результатом выполненной работы команды.",
-    subtitle: "Венера",
-    info: "Москва, 64 м²",
-    img: "https://geometrium.com/wp-content/uploads/2025/04/2-_70_.webp"
-  },
-  {
-    id: 7,
-    title: "Были уверены, что обратимся именно к вам",
-    text: "Мы находимся не в Москве, поэтому для нас было важно, чтобы связь со студией была постоянной. Такой запрос был учтен. Дизайнер всегда был на связи, устраивал зум звонки и подробно всё объяснял.",
-    subtitle: "Анастасия",
-    info: "Ставрополь, квартира 57 м²",
-    img: "https://geometrium.com/wp-content/uploads/2024/01/slide-review-img-3.jpg"
-  },
-  {
-    id: 8,
-    title: "Уровень работы студии действительно на высоте",
-    text: "Хочу выразить благодарность за отличный мини-проект двухкомнатной квартиры. Очень понравились креативность и профессионализм специалистов. Получилось создать очень комфортную планировку.",
-    subtitle: "Антон",
-    info: "Королев, планировка квартиры 95 м²",
-    img: "https://geometrium.com/wp-content/uploads/2024/01/slide-review-img-1.jpg"
-  }
-];
+  const reviews = [
+    {
+      id: 1,
+      title: "Реализовали все, что хотели",
+      text: "Когда мы обратились в студию, хотели получить современный функциональный интерьер, в котором была бы продумана вся эргономика. Хотели также хорошую кухню, потому что мы оба любим готовить. Чтобы кухня закрывалась и открывалась, убирая лишний шум. Хотели общую зону, чтобы собираться с друзьями. Одновременно можно было и готовить, и общаться всем вместе. Вот это всё реализовано в нашей квартире. Мы очень довольны конечным продуктом.",
+      subtitle: "Илья и Елена",
+      info: "ЖК Серебряный парк 82 м²",
+      img: "https://geometrium.com/wp-content/uploads/2024/04/dizayn-interera-zakazat-v-moskve.jpg"
+    },
+    {
+      id: 2,
+      title: "Всегда на связи",
+      text: "Всем остались довольны. Сделали проект нашей квартиры с архитектурным бюро GEOMETRIUM. Работой команды дизайнеров остались очень довольны. Всегда на связи, всегда готовы выслушать и внести свои коррективы. В результате нашей совместной работы мы получили очень интересный проект.",
+      subtitle: "Лилия",
+      info: "Москва, 113 м²",
+      img: "https://geometrium.com/wp-content/uploads/2025/04/20_HW_3-post-_1_.webp"
+    },
+    {
+      id: 3,
+      title: "Тендер для выбора студии",
+      text: "Для своей квартиры мы сделали целый тендер, чтобы выбрать студию дизайна. Анализировали качество, подход, стоимость и стиль. В результате компания Geometrium выиграла тендер. Мы очень много времени уделили именно проектированию, чтобы всё было продумано и понятно.",
+      subtitle: "Алексей и Дарья",
+      info: "ЖК Династия 73 м²",
+      img: "https://geometrium.com/wp-content/uploads/2024/04/3R5A6379-1.jpg"
+    },
+    {
+      id: 4,
+      title: "Сделали кухню-гостинную на 11 м² больше!",
+      text: "Хочется сказать спасибо дизайнеру Эльвире и в целом команде Geometrium, что им удалось в наши 85 кв.м уместить всё, что нам хотелось. В результате всё получилось. Общая зона достаточно большая, и получилось очень удобно для жизни.",
+      subtitle: "ЖК Небо",
+      info: "95 м²",
+      img: "https://geometrium.com/wp-content/uploads/2024/04/3R5A3229-1-1.png"
+    },
+    {
+      id: 5,
+      title: "В процессе реализации",
+      text: "Очень рады, что выбрали вас в качестве дизайнеров для нашей квартиры. У нас был основной вопрос по залу с кухней, так как площадь была совсем небольшая, и мы не понимали, как лучше всё организовать.",
+      subtitle: "Павел и Анна",
+      info: "Москва 90 м²",
+      img: "https://geometrium.com/wp-content/uploads/2025/04/5-_3_.webp"
+    },
+    {
+      id: 6,
+      title: "100 баллов",
+      text: "Готова поставить студии просто 100 баллов. Отработали весь проект от начала и завершения авторского надзора на высшем уровне. Я осталась очень довольна результатом выполненной работы команды.",
+      subtitle: "Венера",
+      info: "Москва, 64 м²",
+      img: "https://geometrium.com/wp-content/uploads/2025/04/2-_70_.webp"
+    },
+    {
+      id: 7,
+      title: "Были уверены, что обратимся именно к вам",
+      text: "Мы находимся не в Москве, поэтому для нас было важно, чтобы связь со студией была постоянной. Такой запрос был учтен. Дизайнер всегда был на связи, устраивал зум звонки и подробно всё объяснял.",
+      subtitle: "Анастасия",
+      info: "Ставрополь, квартира 57 м²",
+      img: "https://geometrium.com/wp-content/uploads/2024/01/slide-review-img-3.jpg"
+    },
+    {
+      id: 8,
+      title: "Уровень работы студии действительно на высоте",
+      text: "Хочу выразить благодарность за отличный мини-проект двухкомнатной квартиры. Очень понравились креативность и профессионализм специалистов. Получилось создать очень комфортную планировку.",
+      subtitle: "Антон",
+      info: "Королев, планировка квартиры 95 м²",
+      img: "https://geometrium.com/wp-content/uploads/2024/01/slide-review-img-1.jpg"
+    }
+  ];
 
-let currentIndex = 0;
-const sldr = document.getElementById("reviewSlider");
+  let currentIndex = 0;
+  const sldr = document.getElementById("reviewSlider");
 
-function renderSlide() {
-  const item = reviews[currentIndex];
+  function renderSlide() {
+    const item = reviews[currentIndex];
 
-  sldr.innerHTML = `
-    <div class="w-[40%] pt-4">
-      <div class="text-[70px] leading-none text-white/80 font-serif">“</div>
+    sldr.innerHTML = `
+    <div class="w-full lg:w-[40%] pt-4 order-2 lg:order-1">
+      <div class="text-[60px] lg:text-[70px] leading-none text-white/80 font-serif">“</div>
 
-      <h2 class="text-[24px] font-medium text-black leading-[1.3]">
+      <h2 class="text-[20px] lg:text-[24px] font-medium text-black leading-[1.3]">
         ${item.title}
       </h2>
 
-      <p class="mt-12 text-[18px] tracking-[0.024rem] text-black leading-[1.6]">
+      <p class="mt-6 lg:mt-12 text-[16px] lg:text-[18px] tracking-[0.024rem] text-black leading-[1.6]">
         ${item.text}
       </p>
     </div>
 
-    <div class="w-[60%]">
-      <div class="flex items-start justify-between mb-8">
+    <div class="w-full lg:w-[60%] order-1 lg:order-2">
+      <div class="flex items-start justify-between mb-6 lg:mb-8">
         <div>
-          <p class="text-[16px] font-medium text-black leading-tight">
+          <p class="text-[14px] lg:text-[16px] font-medium text-black leading-tight">
             ${item.subtitle}
           </p>
-          <p class="mt-1 text-[14px] text-gray-500 leading-tight">
+          <p class="mt-1 text-[13px] lg:text-[14px] text-gray-500 leading-tight">
             ${item.info}
           </p>
         </div>
 
-        <div class="text-[26px] font-medium text-black">
+        <div class="text-[20px] lg:text-[26px] font-medium text-black">
           ${item.id}
           <span class="text-gray-500">/ ${reviews.length}</span>
         </div>
@@ -196,42 +242,51 @@ function renderSlide() {
         <img 
           src="${item.img}" 
           alt="${item.title}"
-          class="w-full h-120 object-cover block"
+          class="w-full h-65 md:h-105 lg:h-120 object-cover block"
         >
 
         <button
           onclick="prevSlide()"
-          class="absolute left-8 top-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-[#ccfe0f] flex items-center justify-center text-[22px] text-black transition duration-300 cursor-pointer ${currentIndex === 0 ? 'opacity-30 cursor-not-allowed' : 'opacity-0 group-hover:opacity-100'}"
+          class="absolute left-3 lg:left-8 top-1/2 -translate-y-1/2 w-11 h-11 lg:w-16 lg:h-16 rounded-full bg-[#ccfe0f] flex items-center justify-center text-[16px] lg:text-[22px] text-black transition duration-300 cursor-pointer ${currentIndex === 0 ? 'opacity-30 cursor-not-allowed' : 'opacity-100 lg:opacity-0 lg:group-hover:opacity-100'}"
         >
           <i class="fa-solid fa-arrow-left"></i>
         </button>
 
         <button
           onclick="nextSlide()"
-          class="absolute right-8 top-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-[#ccfe0f] flex items-center justify-center text-[22px] text-black transition duration-300 cursor-pointer ${currentIndex === reviews.length - 1 ? 'opacity-30 cursor-not-allowed' : 'opacity-0 group-hover:opacity-100'}"
+          class="absolute right-3 lg:right-8 top-1/2 -translate-y-1/2 w-11 h-11 lg:w-16 lg:h-16 rounded-full bg-[#ccfe0f] flex items-center justify-center text-[16px] lg:text-[22px] text-black transition duration-300 cursor-pointer ${currentIndex === reviews.length - 1 ? 'opacity-30 cursor-not-allowed' : 'opacity-100 lg:opacity-0 lg:group-hover:opacity-100'}"
         >
           <i class="fa-solid fa-arrow-right"></i>
         </button>
       </div>
     </div>
   `;
-}
-
-function nextSlide() {
-  if (currentIndex < reviews.length - 1) {
-    currentIndex = currentIndex + 1;
-    renderSlide();
   }
-}
 
-function prevSlide() {
-  if (currentIndex > 0) {
-    currentIndex = currentIndex - 1;
-    renderSlide();
+  function nextSlide() {
+    if (currentIndex < reviews.length - 1) {
+      currentIndex = currentIndex + 1;
+      renderSlide();
+    }
   }
-}
+
+  function prevSlide() {
+    if (currentIndex > 0) {
+      currentIndex = currentIndex - 1;
+      renderSlide();
+    }
+  }
+
 
 renderSlide();
+
+    function openMobileMenu() {
+    document.getElementById("mobileMenu").classList.remove("hidden");
+  }
+
+  function closeMobileMenu() {
+    document.getElementById("mobileMenu").classList.add("hidden");
+  }
   </script>
 
 </body>
